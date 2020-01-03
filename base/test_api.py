@@ -1,40 +1,63 @@
+import sys
+import traceback
 import unittest
+import warnings
 import ddt
 import os
 import requests
+
+from StartField.base.login_in_out import login_in_status, login_out_status
 from StartField.excel_casa import write_Excel
 from StartField.excel_casa import read_Excel
-from . import runmethod
-from StartField.conf.readConfig import PATH
+from StartField.base import runmethod
+from StartField.conf.readConfig import case_excel_path, result_excel_path, NowDate, PATH
+from StartField.base.logging_config import Log
+logger = Log()
+logger.logger.info("info")
 
-curpath = os.path.dirname(os.path.realpath(__file__))
-textxlsx = os.path.join(curpath, "demo_api.xlsx")
 
-# 复制文件到test_report目录下
-report_path = os.path.join(os.path.dirname(curpath))
-reportxlsx = os.path.join(report_path, "test_report/result.xlsx")
+data = read_Excel.GetExcelData(case_excel_path).dict_data()
+write_Excel.copy_excel(case_excel_path, result_excel_path)  # copy 到test_report路径下
 
-# testdata = read_Excel.GetExcelData().dict_data()
-data = read_Excel.GetExcelData(PATH + "/excel_casa/data2.xlsx").dict_data()
 
 @ddt.ddt
 class Test_api(unittest.TestCase):
-    @classmethod
-    def setUp(cls):
-        cls.s = requests.session()
+
+
+    def setUp(self):
+        warnings.simplefilter('ignore', ResourceWarning)  # 这行代码的作用是忽略一些告警打印
+        self.s = requests.session()
         # 登录，如果有的话，则在此登录
-        write_Excel.copy_excel(PATH + "/excel_casa/data2.xlsx", reportxlsx)
+        self.login = False
+
 
     @ddt.data(*data)
-    def test_api(self,data):
-        res = runmethod.send_request(self.s, data)
-        runmethod.write_result(res, filename=reportxlsx)
+    def test_api(self, data):
+        cookie = None
+        # print(type(data["token"]))
+        if data["token"] != 0:
+            self.login = True
+            cookie = login_in_status(self.s)       # 获取登录状态的token
+            print("Login_in")
 
-        check = data["checkpoint"]
+        res = runmethod.send_request(self.s, data, cookie)
+        runmethod.write_result(res, filename=result_excel_path)
 
+        check = data["expect"]
         res_text = res['text']
+        # print(check, res_text)
+        # print(res_text)
 
-        self.assertTrue(check in res_text)
+        self.assertTrue(check in res_text, msg="expect 检出错误")
+        self.assertEqual(res["statuscode"], '200', msg="error")
+        # logger.logger.exception(sys.exc_info())
+        # logger.logger.error('error!', exc_info=True)
+
+    def tearDown(self) -> None:
+        if self.login:
+            print("Logout")
+            login_out_status(self.s)
+
 
 if __name__ == '__main__':
     unittest.main()

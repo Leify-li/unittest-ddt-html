@@ -1,0 +1,573 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>测试报告</title>
+    <meta name="generator" content="HTMLTestRunner 0.9.1"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    
+<style type="text/css" media="screen">
+    body        { font-family: verdana, arial, helvetica, sans-serif; font-size: 80%; }
+    table       { font-size: 100%; }
+    pre         { white-space: pre-wrap;word-wrap: break-word; }
+
+    /* -- heading ---------------------------------------------------------------------- */
+    h1 {
+        font-size: 16pt;
+        color: gray;
+    }
+    .heading {
+        margin-top: 0ex;
+        margin-bottom: 1ex;
+    }
+
+    .heading .attribute {
+        margin-top: 1ex;
+        margin-bottom: 0;
+    }
+
+    .heading .description {
+        margin-top: 2ex;
+        margin-bottom: 3ex;
+    }
+
+    /* -- css div popup ------------------------------------------------------------------------ */
+    a.popup_link {
+    }
+
+    a.popup_link:hover {
+        color: red;
+    }
+
+    .popup_window {
+        display: none;
+        position: relative;
+        left: 0px;
+        top: 0px;
+        /*border: solid #627173 1px; */
+        padding: 10px;
+        /* */
+        font-family: "Lucida Console", "Courier New", Courier, monospace;
+        text-align: left;
+        font-size: 8pt;
+        /* width: 500px;*/
+    }
+
+    }
+    /* -- report ------------------------------------------------------------------------ */
+    #show_detail_line {
+        margin-top: 3ex;
+        margin-bottom: 1ex;
+    }
+    #result_table {
+        width: 99%;
+    }
+    #header_row {
+        font-weight: bold;
+        color: #303641;
+        
+    }
+    #total_row  { font-weight: bold; }
+    .passClass  {  }
+    .failClass  { background-color: #ffefa4; }
+    .errorClass {  }
+    .passCase   { color: #6c6; }
+    .failCase   { color: #FF6600; font-weight: bold; }
+    .errorCase  { color: #c00; font-weight: bold; }
+    .hiddenRow  { display: none; }
+    .testcase   { margin-left: 2em; }
+
+
+    /* -- ending ---------------------------------------------------------------------- */
+    #ending {
+    }
+
+    #div_base {
+                position:absolute;
+                top:0%;
+                left:5%;
+                right:5%;
+                width: auto;
+                height: auto;
+                margin: -15px 0 0 0;
+    }
+</style>
+
+    <link href="http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <!-- <script type="text/javascript" src="https://cdn.bootcss.com/echarts/3.8.5/echarts.common.js"></script>-->
+    <script src="https://cdn.bootcss.com/echarts/3.8.5/echarts.common.min.js"></script>
+</head>
+<body>
+
+    <script language="javascript" type="text/javascript"><!--
+    output_list = Array();
+
+    /* level - 0:Summary; 1:Failed; 2:All */
+    function showCase(level) {
+        trs = document.getElementsByTagName("tr");
+        for (var i = 0; i < trs.length; i++) {
+            tr = trs[i];
+            id = tr.id;
+            if (id.substr(0,2) == 'ft') {
+                if (level < 1) {
+                    tr.className = 'hiddenRow';
+                }
+                else {
+                    tr.className = '';
+                }
+            }
+            if (id.substr(0,2) == 'pt') {
+                if (level > 1) {
+                    tr.className = '';
+                }
+                else {
+                    tr.className = 'hiddenRow';
+                }
+            }
+        }
+    }
+
+
+    function showClassDetail(cid, count) {
+        var id_list = Array(count);
+        var toHide = 1;
+        for (var i = 0; i < count; i++) {
+            tid0 = 't' + cid.substr(1) + '.' + (i+1);
+            tid = 'f' + tid0;
+            tr = document.getElementById(tid);
+            if (!tr) {
+                tid = 'p' + tid0;
+                tr = document.getElementById(tid);
+            }
+            id_list[i] = tid;
+            if (tr.className) {
+                toHide = 0;
+            }
+        }
+        for (var i = 0; i < count; i++) {
+            tid = id_list[i];
+            if (toHide) {
+                document.getElementById('div_'+tid).style.display = 'none'
+                document.getElementById(tid).className = 'hiddenRow';
+            }
+            else {
+                document.getElementById(tid).className = '';
+            }
+        }
+    }
+
+
+    function showTestDetail(div_id){
+        var details_div = document.getElementById(div_id)
+        var displayState = details_div.style.display
+        // alert(displayState)
+        if (displayState != 'block' ) {
+            displayState = 'block'
+            details_div.style.display = 'block'
+        }
+        else {
+            details_div.style.display = 'none'
+        }
+    }
+
+
+    function html_escape(s) {
+        s = s.replace(/&/g,'&amp;');
+        s = s.replace(/</g,'&lt;');
+        s = s.replace(/>/g,'&gt;');
+        return s;
+    }
+    /* obsoleted by detail in <div>
+    function showOutput(id, name) {
+        var w = window.open("", //url
+                        name,
+                        "resizable,scrollbars,status,width=800,height=450");
+        d = w.document;
+        d.write("<pre>");
+        d.write(html_escape(output_list[id]));
+        d.write("\n");
+        d.write("<a href='javascript:window.close()'>close</a>\n");
+        d.write("</pre>\n");
+        d.close();
+    }
+    */
+    --></script>
+
+    <div id="div_base">
+        
+    <div class='page-header'>
+        <h1>测试报告</h1>
+    <p class='attribute'><strong>开始时间:</strong> 2020-01-02 16:15:17</p>
+<p class='attribute'><strong>运行时长:</strong> 0:00:04.896185</p>
+<p class='attribute'><strong>状态:</strong> 通过 5 失败 1</p>
+
+    </div>
+    <!--<div style="float: left;width:50%;"><p class='description'></p></div>-->
+    <div id="chartline" style="width:50%;height:400px;float:left;"></div>
+    <div id="chart"style="width:50%;height:400px;float:right;"></div>
+
+        
+    <div class="btn-group btn-group-sm">
+         <!-- <button class="btn btn-default" onclick='javascript:showCase(0)'>总结</button> -->
+        <!--<button class="btn btn-default" onclick='javascript:showCase(1)'>失败</button>-->
+        <!--<button class="btn btn-default" onclick='javascript:showCase(2)'>全部</button>-->
+        <a class="btn btn-primary" onclick='javascript:showCase(0)'>概要 83.33% </a>
+        <a class="btn btn-warning" onclick='javascript:showCase(4)'>错误 0 </a>
+        <a class="btn btn-danger" onclick='javascript:showCase(1)'>失败  1 </a>
+        <a class="btn btn-success" onclick='javascript:showCase(2)'>通过 5 </a>
+        <a class="btn btn-info" onclick='javascript:showCase(3)'>所有 6 </a>  
+
+    </div>
+    <p></p>
+    <table id='result_table' class="table table-bordered">
+        <colgroup>
+            <col align='left' />
+            <col align='right' />
+            <col align='right' />
+            <col align='right' />
+            <col align='right' />
+            <col align='right' />
+        </colgroup>
+        <tr id='header_row'>
+            <td>测试套件/测试用例</td>
+            <td>总数</td>
+            <td>通过</td>
+            <td>失败</td>
+            <td>错误</td>
+            <td>查看</td>
+            <th>错误截图</th>
+        </tr>
+        
+    <tr class='failClass'>
+        <td>test_api.Test_api</td>
+        <td>6</td>
+        <td>5</td>
+        <td>1</td>
+        <td>0</td>
+        <td><a href="javascript:showClassDetail('c1',6)">详情</a></td>
+        <td>&nbsp;</td>
+    </tr>
+
+<tr id='pt1.1' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_api_1</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.1')" >
+        通过</a>
+
+    <div id='div_pt1.1' class="popup_window">
+        <pre>
+        pt1.1: Login_in
+*******正在执行用例：  22 ---- module:operation  **********  招标
+请求方式：post, 请求url:http://192.168.0.206:8000/eshop/pc/bid/add
+请求头： {'Content-Type': 'application/json', 'Eshop-Access-Token': 'f6606bf0db6e424a82487a7833ceeb1b', 'SESSION': 'YTE2ZTRkZTgtNjc3YS00Y2ZkLTk4ZjMtOGM1YTc5ZDdkODY1'}
+请求params：None
+请求body：{'bidInfo': {'tenderType': 1, 'bidName': '齐桓', 'beginDate': '2020-01-02 00:00', 'endDate': '2020-01-10 00:00', 'askDate': '2020-01-06 00:00', 'isProject': 0}, 'bidDel': {'classId': '14', 'cataTwoId': '100002', 'cataId': '100010', 'subject': [{'subName': '1', 'specName': '21', 'unit': '1', 'bidQty': 10, 'id': '1577759734406'}], 'isSample': 1, 'isDelivery': 0, 'files': [{'isFolder': False, 'isRoot': False, 'id': '11719643450834944', 'fileType': 'application/x-zip-compressed', 'name': 'pconline1482488773765.zip', 'size': 393141, 'relativePath': 'pconline1482488773765.zip', 'paused': False, 'error': False, 'allError': False, 'aborted': False, 'averageSpeed': 0, 'currentSpeed': 0, '_lastProgressCallback': 1577759691175, '_prevUploadedSize': 393141, '_prevProgress': 1, 'uniqueIdentifier': '393141-pconline1482488773765zip', 'ignored': False, 'url': 'https://gdjcywebdata001.oss-cn-shenzhen.aliyuncs.com/d3ba3285ced04ee9b52e235d4171f189.zip', '_progeressId': 1462}], 'value': 1, 'bidExplain': '', 'devDate': 15, 'deliveryInfo': {'areas': [], 'devDelAddress': ''}}, 'supportDemand': {'orgType': 1, 'isNotLimit': True, 'aboveCountNotLimit': True, 'aboveCapNotLimit': True, 'aboveYearNotLimit': True, 'isNeedDeposit': 0, 'aboveCount': 0, 'aboveCap': 0, 'aboveYear': 0}, 'payInfo': {'payExplain': '月结'}, 'contactInfo': {'name': '齐恒公', 'mobile': '13766666666', 'email': '6666666@qq.com'}}
+expect: "msg":"处理成功"
+statuscode: 200
+用例测试结果:   22----&gt;pass
+Logout
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='pt1.2' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_api_2</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.2')" >
+        通过</a>
+
+    <div id='div_pt1.2' class="popup_window">
+        <pre>
+        pt1.2: Login_in
+*******正在执行用例：  23 ---- module:operation  **********  简易招标
+请求方式：post, 请求url:http://192.168.0.206:8000/eshop/pc/bid/postSimpleBid
+请求头： {'Content-Type': 'application/json', 'Eshop-Access-Token': 'dcb07e0273a140aa87b884042db4106b', 'SESSION': 'NGJmOTc3NGQtNmM4NS00ODM4LWEzZTYtM2E2N2E2YmM2NjY5'}
+请求params：None
+请求body：{'bidInfo': {'tenderType': 1, 'bidName': '赵', 'isProject': 0, 'endDate': '2020-01-02 00:00', 'askDate': '', 'beginDate': '', 'projInfo': {}}, 'bidDel': {'devDate': 5, 'classId': 14, 'cataTwoId': '100003', 'bidCategory': ['100003', '100023', '100145'], 'cataId': '100023', 'subject': [{'subName': '1', 'unit': '1', 'bidQty': 10, 'specName': '1'}], 'files': [{'isFolder': False, 'isRoot': False, 'id': '11722907836219392', 'fileType': 'image/jpeg', 'name': 'wallhaven-0w76pq.jpg', 'size': 774403, 'relativePath': 'wallhaven-0w76pq.jpg', 'paused': False, 'error': False, 'allError': False, 'aborted': False, 'averageSpeed': 0, 'currentSpeed': 0, '_lastProgressCallback': 1577772143695, '_prevUploadedSize': 774403, '_prevProgress': 1, 'uniqueIdentifier': '774403-wallhaven-0w76pqjpg', 'ignored': False, 'url': 'https://gdjcywebdata001.oss-cn-shenzhen.aliyuncs.com/6a8484ff680f4d79b4e181dcfd9051f8.jpg', '_progeressId': 698}]}, 'bidSetting': {'sysInfo': []}, 'contactInfo': {'name': '赵巍王', 'mobile': '15066448899'}, 'payInfo': {}, 'supportDemand': {'areas': [{'areaCode': '440400000000', 'areaName': '珠海市', 'areaLevel': 2, 'parentCode': '440000000000'}]}}
+expect: "msg":"处理成功"
+statuscode: 200
+用例测试结果:   23----&gt;pass
+Logout
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='ft1.3' class='none'>
+    <td class='failCase'><div class='testcase'>test_api_3</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.3')" >
+        失败</a>
+
+    <div id='div_ft1.3' class="popup_window">
+        <pre>
+        ft1.3: Login_in
+*******正在执行用例：  24 ---- module:operation  **********  新增项目
+请求方式：post, 请求url:http://192.168.0.206:8000/eshop/pc/crm/project/addProj
+请求头： {'Content-Type': 'application/json', 'Eshop-Access-Token': 'd36f1fbd1e0a472c94f01d84bdad3eaa', 'SESSION': 'MTQ1NmZiNzEtNjE4NC00ODQ5LTk2MWQtNTQ5YjEwNzA5NWRh'}
+请求params：None
+请求body：{'projName': '七国ji1', 'delAddress': '紫禁城', 'areas': [{'areaCode': '110000000000', 'areaName': '北京市', 'areaLevel': 1}, {'areaCode': '110100000000', 'areaName': '北京市', 'areaLevel': 2}, {'areaCode': '110101000000', 'areaName': '东城区', 'areaLevel': 3}]}
+expect: "msg":"处理成功"
+statuscode: 200
+用例测试结果:   24----&gt;fail
+returnData: {"success":false,"msg":"项目名称重复","code":200,"data":{"msg":"项目名称重复"}} &lt;class 'str'&gt;
+Logout
+Traceback (most recent call last):
+  File "D:\Python\lib\site-packages\ddt.py", line 145, in wrapper
+    return func(self, *args, **kwargs)
+  File "D:\Python_field\StartField\base\test_api.py", line 51, in test_api
+    self.assertTrue(check in res_text, msg="expect 检出错误")
+AssertionError: False is not true : expect 检出错误
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='pt1.4' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_api_4</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.4')" >
+        通过</a>
+
+    <div id='div_pt1.4' class="popup_window">
+        <pre>
+        pt1.4: Login_in
+*******正在执行用例：  25 ---- module:operation  **********  项目招标
+请求方式：post, 请求url:http://192.168.0.206:8000/eshop/pc/bid/add
+请求头： {'Content-Type': 'application/json', 'Eshop-Access-Token': 'ba2e24ebc36541f98903f9f75e607954', 'SESSION': 'MDM4ZGU0MTYtMTg0Ny00MDk2LTg5MzItODRmYzUwZTkwMjAy'}
+请求params：None
+请求body：{'bidInfo': {'id': '', 'tenderType': 1, 'bidName': '项目6招标', 'bidUnit': '', 'beginDate': '2019-12-31 14:25', 'endDate': '2020-12-02 00:00', 'askDate': '2020-01-17 00:00', 'isProject': 1, 'projInfo': {'id': '11723090723602432', 'projName': '七国争霸', 'areas': [{'areaCode': '110000000000', 'areaName': '北京市', 'areaLevel': 1}, {'areaCode': '110100000000', 'areaName': '北京市', 'areaLevel': 2}, {'areaCode': '110101000000', 'areaName': '东城区', 'areaLevel': 3}], 'delAddress': '紫禁城', 'projIntro': '', 'images': [{'imgUrl': 'https://gdjcywebdata001.oss-cn-shenzhen.aliyuncs.com/d49d0d1ab0804b38bbcbe49a6fa526d5.jpg', 'imgId': '11723109637029888', 'name': 'wallhaven-0w76pq.jpg'}], 'canEdit': False}}, 'bidDel': {'classId': '14', 'cataTwoId': '100009', 'cataId': '100062', 'subject': [{'subName': '1', 'specName': '1', 'brandName': '', 'oriName': '', 'unit': '1', 'bidQty': 10, 'remark': '', 'id': '1577773722727'}], 'isSample': 1, 'isDelivery': 1, 'files': [{'isFolder': False, 'isRoot': False, 'id': '11723296844021760', 'fileType': 'application/x-zip-compressed', 'name': 'pconline1482488773765.zip', 'size': 393141, 'relativePath': 'pconline1482488773765.zip', 'paused': False, 'error': False, 'allError': False, 'aborted': False, 'averageSpeed': 0, 'currentSpeed': 0, '_lastProgressCallback': 1577773627618, '_prevUploadedSize': 393141, '_prevProgress': 1, 'uniqueIdentifier': '393141-pconline1482488773765zip', 'ignored': False, 'url': 'https://gdjcywebdata001.oss-cn-shenzhen.aliyuncs.com/47e31eed07d9482eb89fe7ba7339b320.zip', '_progeressId': 12488}], 'value': 3, 'bidExplain': '', 'devDate': 16, 'deliveryInfo': {'areas': [{'areaCode': '130000000000', 'areaName': '河北省', 'areaLevel': 1}, {'areaCode': '130100000000', 'areaName': '石家庄市', 'areaLevel': 2}], 'devDelAddress': '1号'}}, 'supportDemand': {'aboveCount': 1, 'aboveCap': 1, 'aboveYear': 1, 'orgType': 1, 'isNotLimit': True, 'areas': [], 'document': [{'dataItem': '营业执照', 'requireType': 2}], 'aboveCountNotLimit': False, 'aboveCapNotLimit': False, 'aboveYearNotLimit': False, 'depositRemark': '押金', 'depositAmount': 111, 'isNeedDeposit': 1}, 'payInfo': {'payExplain': '月结'}, 'bidSetting': {'sysInfo': [], 'notMember': [], 'bookMember': []}, 'contactInfo': {'name': '启翔', 'mobile': '13666666666', 'email': '89889898@qq.com', 'phone': '-', 'code': '', 'telephone': ''}}
+expect: "msg":"处理成功"
+statuscode: 200
+用例测试结果:   25----&gt;pass
+Logout
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='pt1.5' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_api_5</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.5')" >
+        通过</a>
+
+    <div id='div_pt1.5' class="popup_window">
+        <pre>
+        pt1.5: Login_in
+*******正在执行用例：  26 ---- module:operation  **********  定向邀标
+请求方式：post, 请求url:http://192.168.0.206:8000/eshop/pc/bid/add
+请求头： {'Content-Type': 'application/json', 'Eshop-Access-Token': 'e9269821bb8c491faa27f1d7a09be8c9', 'SESSION': 'MWYwNTAwNDYtZWViNi00YjFlLWJlYzctZTRjZmZhNjhmNGM2'}
+请求params：None
+请求body：{'bidInfo': {'id': '', 'tenderType': 2, 'bidName': '燕13', 'bidUnit': '', 'beginDate': '2019-12-31 14:34', 'endDate': '2019-12-31 16:00', 'askDate': '2019-12-31 15:01', 'isProject': 0, 'projInfo': {}}, 'bidDel': {'classId': '17', 'cataTwoId': '179', 'subject': [{'subName': '1', 'specName': '1', 'brandName': '1', 'oriName': '1', 'unit': '1', 'reserved': '1', 'bidQty': 10, 'remark': '1', 'id': '1577774119955'}], 'isSample': 0, 'isDelivery': 0, 'files': [{'isFolder': False, 'isRoot': False, 'id': '11723434421649408', 'fileType': 'application/x-zip-compressed', 'name': 'pconline1482488773765.zip', 'size': 393141, 'relativePath': 'pconline1482488773765.zip', 'paused': False, 'error': False, 'allError': False, 'aborted': False, 'averageSpeed': 0, 'currentSpeed': 0, '_lastProgressCallback': 1577774152422, '_prevUploadedSize': 393141, '_prevProgress': 1, 'uniqueIdentifier': '393141-pconline1482488773765zip', 'ignored': False, 'url': 'https://gdjcywebdata001.oss-cn-shenzhen.aliyuncs.com/b132b942d4884bd18753b20308b68d2c.zip', '_progeressId': 19450}], 'value': 2, 'bidExplain': '', 'devDate': 1, 'deliveryInfo': {'areas': [], 'devDelAddress': ''}}, 'supportDemand': {'orgType': 1, 'isNotLimit': True, 'areas': [], 'document': [], 'aboveCountNotLimit': True, 'aboveCapNotLimit': True, 'aboveYearNotLimit': True, 'depositRemark': '', 'isNeedDeposit': 0, 'aboveCount': 0, 'aboveCap': 0, 'aboveYear': 0}, 'payInfo': {'payExplain': '到付'}, 'bidSetting': {'sysInfo': [{'name': '广州天祥建筑劳务有限公司', 'mobile': '15818837778', 'id': '3371503169306624'}], 'notMember': [], 'bookMember': []}, 'contactInfo': {'name': '燕洵', 'mobile': '13789898989', 'email': '4562131@177.com', 'phone': '-', 'code': '', 'telephone': ''}}
+expect: "msg":"处理成功"
+statuscode: 200
+用例测试结果:   26----&gt;pass
+Logout
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='pt1.6' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_api_6</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.6')" >
+        通过</a>
+
+    <div id='div_pt1.6' class="popup_window">
+        <pre>
+        pt1.6: Login_in
+*******正在执行用例：  27 ---- module:operation  **********  投标
+请求方式：put, 请求url:http://192.168.0.206:8000/eshop/pc/tender/postTender
+请求头： {'Content-Type': 'application/json', 'Eshop-Access-Token': 'a9357e41bd3945eb8868c92f69b10ae9', 'SESSION': 'ZWE1ZjQ0Y2QtOTczMS00N2NhLTk4ZGUtY2NhN2E5YTE5NDkz'}
+请求params：None
+请求body：{'id': '', 'baseInfo': {'bizClassStr': '商品分类', 'bizCataStr': '黑色金属材料', 'projName': '无归属项目', 'bizClassId': '14', 'bidName': '齐', 'endDatetime': '2020年01月10日00点00分', 'bizCataId': '100010'}, 'required': {'orgName': '但是', 'supplyList': [], 'baseList': [{'isSatisfy': True, 'value': '不限', 'key': '注册资金'}, {'isSatisfy': True, 'value': '不限', 'key': '成立年限'}, {'isSatisfy': True, 'value': '不限', 'key': '供应商类型'}, {'isSatisfy': True, 'value': '不限', 'key': '招标地区'}, {'isSatisfy': False, 'value': '黑色金属材料', 'key': '招标类目'}]}, 'value': [{'brandName': '', 'subMatterId': '11719710203969536', 'tenderPrice': '1', 'bidQty': 10, 'remark': '', 'unit': '1', 'tenderAmount': '', 'specName': '21', 'reserved': None, 'subName': '1', 'own_org_id': None, 'oriName': '', 'id': None}], 'upload': {'files': [{'isFolder': False, 'isRoot': False, 'id': '11769980275654656', 'fileType': 'application/x-zip-compressed', 'name': 'pconline1482488773765.zip', 'size': 393141, 'relativePath': 'pconline1482488773765.zip', 'paused': False, 'error': False, 'allError': False, 'aborted': False, 'averageSpeed': 0, 'currentSpeed': 0, '_lastProgressCallback': 1577951710646, '_prevUploadedSize': 393141, '_prevProgress': 1, 'uniqueIdentifier': '393141-pconline1482488773765zip', 'ignored': False, 'url': 'https://gdjcywebdata001.oss-cn-shenzhen.aliyuncs.com/7019d175fd4a45eea8e10ff791df122a.zip', '_progeressId': 19}], 'tenderAmount': 211}, 'tenderExplain': '', 'contact': {'contactsName': '韩信', 'contactsMobile': '13000000000', 'contactsEmail': '66666@136.com', 'contactsPhoneHead': '', 'contactsPhoneStern': '', 'contactsPhone': '-'}, 'billStatus': 0, 'bidId': '11719710194270208', 'bidType': 'BDA'}
+expect: "提交我的投标成功"
+statuscode: 200
+用例测试结果:   27----&gt;pass
+Logout
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+        <tr id='total_row'>
+            <td>总计</td>
+            <td>6</td>
+            <td>5</td>
+            <td>1</td>
+            <td>0</td>
+            <td>&nbsp;</td>
+            <th>&nbsp;</th>
+        </tr>
+    </table>
+
+        <div id='ending'>&nbsp;</div>
+        
+        <script type="text/javascript">
+        var myChartline = echarts.init(document.getElementById('chartline'));
+        var optionline = {
+                tooltip: {
+                trigger: 'axis',
+                
+                axisPointer: {
+                    type: 'cross',
+                    crossStyle: {
+                        color: '#999'
+                    }
+                }
+            },
+            toolbox: {
+                feature: {
+                    dataView: {show: true, readOnly: false},
+                    magicType: {show: true, type: ['line', 'bar']},
+                    restore: {show: true},
+                    saveAsImage: {show: true}
+                }
+            },
+            legend: {
+                data:['所有','错误','成功','失败'],
+               
+            },
+            xAxis: [
+                {
+                    type: 'category',
+                    data:[''],
+                    axisPointer: {
+                        type: 'line'
+                    }
+                }
+            ],
+            yAxis: [
+                {
+                    type: 'value',
+                    name: 'number',
+                    min: 0,
+                    max: function(value){
+                        return value.count_all;
+                    },
+                    
+                    Interval: 1,
+                    axisLabel: {
+                        formatter: '{value}'
+                    }
+                },
+                {
+                    type: 'value',
+                    name: '成功率',
+                    min: 0,
+                    max: 100,
+                    interval: 20,
+                    axisLabel: {
+                        formatter: '{value} %'
+                    }
+                }
+            ],
+            series: [
+                {
+                    name:'所有',
+                    type:'bar',
+                    data:[6]
+                },
+                {
+                    name:'成功',
+                    type:'bar',
+                    data:[5]
+                    //data:[ 20]
+                },
+                {
+                    name:'失败',
+                    type:'bar',
+                    data:[1]
+                },
+                {
+                    name:'错误',
+                    type:'bar',
+                    // yAxisIndex: 1,
+                    data:[0]
+                    //data:[2.0, 2.2, 3.3, 4.5, 6.3, 10.2, 20.3, 23.4, 23.0, 16.5, 12.0, 6.2]
+                }
+            ]
+        };
+        myChartline.setOption(optionline);
+        console.log(1,5,0)
+            // 基于准备好的dom，初始化echarts实例
+            var myChart = echarts.init(document.getElementById('chart'));
+
+            // 指定图表的配置项和数据
+            var option = {
+                title : {
+                    text: '测试执行情况',
+                    x:'center'
+                },
+                tooltip : {
+                    trigger: 'item',
+                    formatter: "{a} <br/>{b} : {c} ({d}%)"
+                },
+                legend: {
+                    orient: 'vertical',
+                    left: 'left',
+                    data: ['通过','失败','错误']
+                },
+                series : [
+                    {
+                        name: '测试执行情况',
+                        type: 'pie',
+                        radius : '60%',
+                        center: ['50%', '60%'],
+                        data:[
+                            {value:5, name:'通过'},
+                            {value:1, name:'失败'},
+                            {value:0, name:'错误'}
+                        ],
+                        itemStyle: {
+                            emphasis: {
+                                shadowBlur: 10,
+                                shadowOffsetX: 0,
+                                shadowColor: 'rgba(0, 0, 0, 0.5)'
+                            }
+                        }
+                    }
+                ]
+            };
+
+            // 使用刚指定的配置项和数据显示图表。
+            myChart.setOption(option);
+        </script>
+    
+
+    </div>
+</body>
+</html>

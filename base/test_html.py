@@ -1,31 +1,33 @@
 # coding=utf-8
 import unittest
 import time
-from StartField.HtmlTestRunner.runner import HTMLTestRunner
+from StartField.base import HTMLTestRunner
 import os
-from StartField.conf.readConfig import PATH
+from StartField.conf.readConfig import NowDate,report_path, case_path
+from StartField.base.logging_config import Log
+logger = Log()
+logger.logger.info("info")
 
-report_path = os.path.join(PATH, 'test_report')
-if not os.path.exists(report_path):
-    os.mkdir(report_path)
-case_path = os.path.join(PATH, "base")
 
 def add_case(casepath=case_path, rule="test*.py"):
     '''加载测试用例'''
 
     discover = unittest.defaultTestLoader.discover(casepath, pattern=rule,)
-    print(discover)
+    # print("dis",discover)
     return discover
 
 def run_case(all_case, reportpath=report_path):
 
+    # 生成的文件加上日期--到秒
+    # htmlreport = reportpath+r"\result_"+NowDate+".html"
     htmlreport = reportpath+r"\result.html"
-    print("测试报告生成地址：", htmlreport)
+    # print("测试报告生成地址：", htmlreport)
 
     fp = open(htmlreport, "wb")
-    runner = HTMLTestRunner(output=fp, report_title="测试报告", failfast=True )
+    runner = HTMLTestRunner.HTMLTestRunner(fp=fp, verbosity=2, title="测试报告")
     runner.run(all_case)
     fp.close()
+
 
 if __name__ == '__main__':
     case = add_case(case_path)

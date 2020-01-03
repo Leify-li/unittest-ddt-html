@@ -43,6 +43,6 @@ def copy_excel(excelpath1, excelpath2):
 
 if __name__ == "__main__":
      copy_excel("data2.xlsx", "data_fu.xlsx")
-     wt = Write_excel("data2.xlsx")
+     wt = Write_excel("../test_case/data2.xlsx")
      wt.write(4, 5, "HELLEOP")
      wt.write(6, 1, "HELLEOP")

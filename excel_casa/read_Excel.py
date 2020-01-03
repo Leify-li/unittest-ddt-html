@@ -1,9 +1,15 @@
 import xlrd as xlrd
+from StartField.conf.readConfig import Skip_Case,Skip_model, case_excel_path, Select
 import xlwt
+from StartField.base.logging_config import Log
+logger = Log()
+logger.logger.info("info")
+
 
 
 class GetExcelData():
-    def __init__(self, excel_path, sheetName="data"):
+    """获取Excel数据， 并帅选出不执行的用例"""
+    def __init__(self, excel_path, sheetName="Sheet1"):
         self.data = xlrd.open_workbook(excel_path)
         self.table = self.data.sheet_by_name(sheetName)
         self.keys = self.table.row_values(0)  # 获取第一行的key
@@ -22,13 +28,23 @@ class GetExcelData():
                 values = self.table.row_values(j)
                 for x in list(range(self.colNum)):
                     dic[self.keys[x]] = values[x]
-                data.append(dic)
+                if Select:
+                    if (dic["case_id"]  in (Skip_Case)) or (dic["module"]  in Skip_model):
+                        data.append(dic)
+                    else:
+                        print(dic['case_id'], end=" / ")
+                else:
+                    data.append(dic)
+
                 j += 1
+
         return data
 
 
 if __name__ == '__main__':
-    filepath = 'data2.xlsx'
-    sheetName = "data"
-    data = GetExcelData(filepath, sheetName)
-    print(data.dict_data())
+    filepath = case_excel_path
+    # sheetName = "data"
+    data = GetExcelData(filepath).dict_data()
+    print(data)
+    # print(data[20])
+    # print(type(data[20]["module"]))
