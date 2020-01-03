@@ -6,9 +6,9 @@ current_directory = os.path.dirname(os.path.abspath(__file__))
 root_path = os.path.abspath(os.path.dirname(current_directory) + os.path.sep + ".")
 sys.path.append(root_path)
 
-from StartField.base.test_html import run_case
-from StartField.conf.readConfig import PATH
-from StartField.base.logging_config import Log
+from base.test_html import run_case
+from conf.readConfig import PATH
+from base.logging_config import Log
 
 
 logger = Log()

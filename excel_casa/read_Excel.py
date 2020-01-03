@@ -1,7 +1,7 @@
 import xlrd as xlrd
-from StartField.conf.readConfig import Skip_Case,Skip_model, case_excel_path, Select
+from conf.readConfig import Skip_Case,Skip_model, case_excel_path, Select
 import xlwt
-from StartField.base.logging_config import Log
+from base.logging_config import Log
 logger = Log()
 logger.logger.info("info")
 

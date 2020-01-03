@@ -1,6 +1,6 @@
 import requests
 
-from StartField.conf.readConfig import Login_User, Login_Password, ReadConfig
+from conf.readConfig import Login_User, Login_Password, ReadConfig
 
 
 def login_in_status(sess):

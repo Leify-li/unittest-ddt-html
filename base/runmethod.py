@@ -2,10 +2,10 @@ import sys
 
 import requests
 import json
-from StartField.conf.readConfig import ReadConfig, PATH, case_excel_path
-from StartField.conf.readConfig import Excel_col
-from StartField.excel_casa import read_Excel, write_Excel
-from StartField.base.logging_config import Log
+from conf.readConfig import ReadConfig, PATH, case_excel_path
+from conf.readConfig import Excel_col
+from excel_casa import read_Excel, write_Excel
+from base.logging_config import Log
 logger = Log()
 # logger.logger.info("info")
 

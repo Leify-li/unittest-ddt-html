@@ -1,10 +1,10 @@
 # coding=utf-8
 import unittest
 import time
-from StartField.base import HTMLTestRunner
+from base import HTMLTestRunner
 import os
-from StartField.conf.readConfig import NowDate,report_path, case_path
-from StartField.base.logging_config import Log
+from conf.readConfig import NowDate,report_path, case_path
+from base.logging_config import Log
 logger = Log()
 logger.logger.info("info")
 

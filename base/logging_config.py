@@ -2,7 +2,7 @@
 import logging
 from logging.handlers import RotatingFileHandler
 
-from StartField.conf.readConfig import PATH, LOG_level
+from conf.readConfig import PATH, LOG_level
 
 
 class Log(object):

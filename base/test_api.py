@@ -6,12 +6,12 @@ import ddt
 import os
 import requests
 
-from StartField.base.login_in_out import login_in_status, login_out_status
-from StartField.excel_casa import write_Excel
-from StartField.excel_casa import read_Excel
-from StartField.base import runmethod
-from StartField.conf.readConfig import case_excel_path, result_excel_path, NowDate, PATH
-from StartField.base.logging_config import Log
+from base.login_in_out import login_in_status, login_out_status
+from excel_casa import write_Excel
+from excel_casa import read_Excel
+from base import runmethod
+from conf.readConfig import case_excel_path, result_excel_path, NowDate, PATH
+from base.logging_config import Log
 logger = Log()
 logger.logger.info("info")
 
