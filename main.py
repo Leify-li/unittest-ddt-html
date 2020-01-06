@@ -7,7 +7,7 @@ root_path = os.path.abspath(os.path.dirname(current_directory) + os.path.sep + "
 sys.path.append(root_path)
 
 from base.test_html import run_case
-from conf.readConfig import PATH, Sender, PassWD, Receivers,Receiver
+from conf.readConfig import PATH, Sender, PassWD, Receivers, Receiver
 from base.logging_config import Log
 from base.send_email import SendMail
 
@@ -30,7 +30,8 @@ def run():
 
     run_case(add_case())
     send_mail = SendMail(Sender, PassWD, Receiver,
-                         title='接口自动化测试', content="自动化测试：\n   测试用例： test_case.xlsx\n   测试结果： result.xlsx 、result.html ", receivers=Receivers)
+                         title='接口自动化测试', content="自动化测试：\n   测试用例： test_case.xlsx\n   测试结果： result.xlsx 、result.html \n 佳娥，邮件的内容是这样的OK吗？",
+                         receivers=Receivers)
     send_mail.send()
 
 
