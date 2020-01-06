@@ -2,7 +2,7 @@
 import os
 from openpyxl import load_workbook
 import openpyxl
-
+import smtplib
 
 class Write_excel(object):
      '''修改excel数据'''

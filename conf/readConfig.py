@@ -19,6 +19,7 @@ if not os.path.exists(report_path):
     os.mkdir(report_path)
 
 result_excel_path = PATH + "/test_report/result.xlsx"                  # excel测试用例结果的存放路经
+result_html_path = PATH + "/test_report/result.html"                  # excel测试用例结果的存放路经
 
 case_path = os.path.join(PATH, "base")                                  # 测试文件的路径
 
@@ -103,6 +104,24 @@ class ReadConfig:
         # print(user, pwd)
         return user, pwd
 
+    def get_email_conf(self):
+        EMail_Server = self.cf.get("EMAIL", "Email_Server")
+        EMail_Server_Port = self.cf.get("EMAIL", "Email_Server_Port")
+        Sender = self.cf.get("EMAIL", "Sender")
+        PassWD = self.cf.get("EMAIL", "PassWD")
+        Receiver = self.cf.get("EMAIL", "Receiver")
+        Receivers = []
+        a = self.cf.get("EMAIL", "Receivers")
+        a = a.split(',')
+        id = map(lambda a: a.strip(), a)
+        id = list(id)
+        for i in id:
+            if i != '':
+                Receivers.append(i)
+
+        return EMail_Server, EMail_Server_Port, Sender, PassWD, Receiver,Receivers
+
+
 
 class Excel_col:
     def __init__(self):
@@ -140,7 +159,8 @@ case_excel_path = PATH + Excel_col().test_local("local")            # excel测�
 Skip_Case, Skip_model, Select = ReadConfig().get_excel()
 LOG_level = ReadConfig().get_log_level()
 Login_User, Login_Password = ReadConfig().get_login_user()
-
+EMail_Server, EMail_Server_Port, Sender, PassWD, Receiver, Receivers = ReadConfig().get_email_conf()
+# print(Receivers)
 if __name__ == '__main__':
     pass
     # ws = ReadConfig()

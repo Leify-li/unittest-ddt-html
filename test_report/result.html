@@ -197,9 +197,9 @@
         
     <div class='page-header'>
         <h1>测试报告</h1>
-    <p class='attribute'><strong>开始时间:</strong> 2020-01-03 17:09:34</p>
-<p class='attribute'><strong>运行时长:</strong> 0:00:04.672639</p>
-<p class='attribute'><strong>状态:</strong> 通过 5 失败 1</p>
+    <p class='attribute'><strong>开始时间:</strong> 2020-01-06 14:37:21</p>
+<p class='attribute'><strong>运行时长:</strong> 0:00:11.630805</p>
+<p class='attribute'><strong>状态:</strong> 通过 25 失败 2</p>
 
     </div>
     <!--<div style="float: left;width:50%;"><p class='description'></p></div>-->
@@ -211,11 +211,11 @@
          <!-- <button class="btn btn-default" onclick='javascript:showCase(0)'>总结</button> -->
         <!--<button class="btn btn-default" onclick='javascript:showCase(1)'>失败</button>-->
         <!--<button class="btn btn-default" onclick='javascript:showCase(2)'>全部</button>-->
-        <a class="btn btn-primary" onclick='javascript:showCase(0)'>概要 83.33% </a>
+        <a class="btn btn-primary" onclick='javascript:showCase(0)'>概要 92.59% </a>
         <a class="btn btn-warning" onclick='javascript:showCase(4)'>错误 0 </a>
-        <a class="btn btn-danger" onclick='javascript:showCase(1)'>失败  1 </a>
-        <a class="btn btn-success" onclick='javascript:showCase(2)'>通过 5 </a>
-        <a class="btn btn-info" onclick='javascript:showCase(3)'>所有 6 </a>  
+        <a class="btn btn-danger" onclick='javascript:showCase(1)'>失败  2 </a>
+        <a class="btn btn-success" onclick='javascript:showCase(2)'>通过 25 </a>
+        <a class="btn btn-info" onclick='javascript:showCase(3)'>所有 27 </a>  
 
     </div>
     <p></p>
@@ -240,28 +240,581 @@
         
     <tr class='failClass'>
         <td>test_api.Test_api</td>
-        <td>6</td>
-        <td>5</td>
-        <td>1</td>
+        <td>27</td>
+        <td>25</td>
+        <td>2</td>
         <td>0</td>
-        <td><a href="javascript:showClassDetail('c1',6)">详情</a></td>
+        <td><a href="javascript:showClassDetail('c1',27)">详情</a></td>
         <td>&nbsp;</td>
     </tr>
 
-<tr id='pt1.1' class='hiddenRow'>
-    <td class='none'><div class='testcase'>test_api_1</div></td>
+<tr id='ft1.1' class='none'>
+    <td class='failCase'><div class='testcase'>test_api_01</div></td>
     <td colspan='5' align='center'>
 
     <!--css div popup start-->
-    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.1')" >
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.1')" >
+        失败</a>
+
+    <div id='div_ft1.1' class="popup_window">
+        <pre>
+        ft1.1: *******正在执行用例：  1 ---- module:register  **********  正常功能测试（or 输入正确的手机号、密码、用户名）
+请求方式：post, 请求url:http://192.168.0.206:8000/eshop/pc/crmMember/registered
+请求头： {'Content-Type': 'application/json'}
+请求params：None
+请求body：{'accountName': 'z19', 'mobile': '13799931772', 'smsCode': '997788', 'accountPwd': '123456', 'pwdLevel': '1'}
+expect: "success":true
+statuscode: 200
+用例测试结果:   1----&gt;fail
+returnData: {"success":false,"msg":"用户已存在","code":500,"data":{"msg":"用户已存在"}} &lt;class 'str'&gt;
+Traceback (most recent call last):
+  File "D:\Python\lib\site-packages\ddt.py", line 145, in wrapper
+    return func(self, *args, **kwargs)
+  File "D:\Python_field\StartField\base\test_api.py", line 51, in test_api
+    self.assertTrue(check in res_text, msg="expect 检出错误")
+AssertionError: False is not true : expect 检出错误
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='pt1.2' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_api_02</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.2')" >
         通过</a>
 
-    <div id='div_pt1.1' class="popup_window">
+    <div id='div_pt1.2' class="popup_window">
         <pre>
-        pt1.1: Login_in
+        pt1.2: *******正在执行用例：  2 ---- module:register  **********  输入重复的的手机号、密码、用户名
+请求方式：post, 请求url:http://192.168.0.206:8000/eshop/pc/crmMember/registered
+请求头： {'Content-Type': 'application/json'}
+请求params：None
+请求body：{'accountName': 'z19', 'mobile': '13799931772', 'smsCode': '997788', 'accountPwd': '123456', 'pwdLevel': '1'}
+expect: "msg":"用户已存在"
+statuscode: 200
+用例测试结果:   2----&gt;pass
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='pt1.3' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_api_03</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.3')" >
+        通过</a>
+
+    <div id='div_pt1.3' class="popup_window">
+        <pre>
+        pt1.3: *******正在执行用例：  3 ---- module:register  **********   输入用户名为空
+请求方式：post, 请求url:http://192.168.0.206:8000/eshop/pc/crmMember/registered
+请求头： {'Content-Type': 'application/json'}
+请求params：None
+请求body：{'accountName': '', 'mobile': '17715130712', 'smsCode': '997788', 'accountPwd': '123456', 'pwdLevel': '1'}
+expect: "msg":"请输入用户昵称"
+statuscode: 200
+用例测试结果:   3----&gt;pass
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='pt1.4' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_api_04</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.4')" >
+        通过</a>
+
+    <div id='div_pt1.4' class="popup_window">
+        <pre>
+        pt1.4: *******正在执行用例：  4 ---- module:register  **********   无用户名字段
+请求方式：post, 请求url:http://192.168.0.206:8000/eshop/pc/crmMember/registered
+请求头： {'Content-Type': 'application/json'}
+请求params：None
+请求body：{'mobile': '17712130712', 'smsCode': '997788', 'accountPwd': '123456', 'pwdLevel': '2'}
+expect: "msg":"请输入用户昵称"
+statuscode: 200
+用例测试结果:   4----&gt;pass
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='pt1.5' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_api_05</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.5')" >
+        通过</a>
+
+    <div id='div_pt1.5' class="popup_window">
+        <pre>
+        pt1.5: *******正在执行用例：  5 ---- module:register  **********   输入密码为空
+请求方式：post, 请求url:http://192.168.0.206:8000/eshop/pc/crmMember/registered
+请求头： {'Content-Type': 'application/json'}
+请求params：None
+请求body：{'accountName': 'm12', 'mobile': '17712130712', 'smsCode': '997788', 'accountPwd': '', 'pwdLevel': '1'}
+expect: "msg":"请输入登录密码"
+statuscode: 200
+用例测试结果:   5----&gt;pass
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='pt1.6' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_api_06</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.6')" >
+        通过</a>
+
+    <div id='div_pt1.6' class="popup_window">
+        <pre>
+        pt1.6: *******正在执行用例：  6 ---- module:register  **********   无密码字段
+请求方式：post, 请求url:http://192.168.0.206:8000/eshop/pc/crmMember/registered
+请求头： {'Content-Type': 'application/json'}
+请求params：None
+请求body：{'accountName': 'm123', 'mobile': '17712130722', 'smsCode': '997788', 'pwdLevel': '3'}
+expect: "msg":"请输入登录密码"
+statuscode: 200
+用例测试结果:   6----&gt;pass
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='pt1.7' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_api_07</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.7')" >
+        通过</a>
+
+    <div id='div_pt1.7' class="popup_window">
+        <pre>
+        pt1.7: *******正在执行用例：  7 ---- module:register  **********   输入错误验证码
+请求方式：post, 请求url:http://192.168.0.206:8000/eshop/pc/crmMember/registered
+请求头： {'Content-Type': 'application/json'}
+请求params：None
+请求body：{'accountName': 'm1234', 'mobile': '17712130332', 'smsCode': '995578', 'accountPwd': '123456', 'pwdLevel': '2'}
+expect: "msg":"验证码不正确"
+statuscode: 200
+用例测试结果:   7----&gt;pass
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='pt1.8' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_api_08</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.8')" >
+        通过</a>
+
+    <div id='div_pt1.8' class="popup_window">
+        <pre>
+        pt1.8: *******正在执行用例：  8 ---- module:register  **********   验证码为空
+请求方式：post, 请求url:http://192.168.0.206:8000/eshop/pc/crmMember/registered
+请求头： {'Content-Type': 'application/json'}
+请求params：None
+请求body：{'accountName': 'm12345', 'mobile': '17712139999', 'smsCode': '', 'accountPwd': '123456', 'pwdLevel': '3'}
+expect: "msg":"请输入验证码"
+statuscode: 200
+用例测试结果:   8----&gt;pass
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='pt1.9' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_api_09</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.9')" >
+        通过</a>
+
+    <div id='div_pt1.9' class="popup_window">
+        <pre>
+        pt1.9: *******正在执行用例：  9 ---- module:register  **********   无验证码字段
+请求方式：post, 请求url:http://192.168.0.206:8000/eshop/pc/crmMember/registered
+请求头： {'Content-Type': 'application/json'}
+请求params：None
+请求body：{'accountName': 'm123456', 'mobile': '17712138888', 'accountPwd': '123456', 'pwdLevel': '4'}
+expect: "msg":"请输入验证码"
+statuscode: 200
+用例测试结果:   9----&gt;pass
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='pt1.10' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_api_10</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.10')" >
+        通过</a>
+
+    <div id='div_pt1.10' class="popup_window">
+        <pre>
+        pt1.10: *******正在执行用例：  10 ---- module:register  **********  输入错误格式的手机号
+请求方式：post, 请求url:http://192.168.0.206:8000/eshop/pc/crmMember/registered
+请求头： {'Content-Type': 'application/json'}
+请求params：None
+请求body：{'accountName': 'm898899', 'mobile': '11216284212', 'smsCode': '997788', 'accountPwd': '123456', 'pwdLevel': '3'}
+expect: "msg":"用户手机号格式不正确"
+statuscode: 200
+用例测试结果:   10----&gt;pass
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='pt1.11' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_api_11</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.11')" >
+        通过</a>
+
+    <div id='div_pt1.11' class="popup_window">
+        <pre>
+        pt1.11: *******正在执行用例：  11 ---- module:register  **********  输入手机号为空
+请求方式：post, 请求url:http://192.168.0.206:8000/eshop/pc/crmMember/registered
+请求头： {'Content-Type': 'application/json'}
+请求params：None
+请求body：{'accountName': 'm98', 'mobile': '', 'smsCode': '997788', 'accountPwd': '123456', 'pwdLevel': '4'}
+expect: "msg":"请输入手机号"
+statuscode: 200
+用例测试结果:   11----&gt;pass
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='pt1.12' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_api_12</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.12')" >
+        通过</a>
+
+    <div id='div_pt1.12' class="popup_window">
+        <pre>
+        pt1.12: *******正在执行用例：  12 ---- module:register  **********  无手机号字段
+请求方式：post, 请求url:http://192.168.0.206:8000/eshop/pc/crmMember/registered
+请求头： {'Content-Type': 'application/json'}
+请求params：None
+请求body：{'accountName': 'm8899', 'smsCode': '997788', 'accountPwd': '123456', 'pwdLevel': '5'}
+expect: "msg":"请输入手机号"
+statuscode: 200
+用例测试结果:   12----&gt;pass
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='pt1.13' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_api_13</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.13')" >
+        通过</a>
+
+    <div id='div_pt1.13' class="popup_window">
+        <pre>
+        pt1.13: *******正在执行用例：  13 ---- module:register  **********  pwdlevel参数为空
+请求方式：post, 请求url:http://192.168.0.206:8000/eshop/pc/crmMember/registered
+请求头： {'Content-Type': 'application/json'}
+请求params：None
+请求body：{'accountName': 'm5566', 'mobile': '17712135555', 'smsCode': '997788', 'accountPwd': '123456', 'pwdLevel': ''}
+expect: "msg":"参数安全等级为空"
+statuscode: 200
+用例测试结果:   13----&gt;pass
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='pt1.14' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_api_14</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.14')" >
+        通过</a>
+
+    <div id='div_pt1.14' class="popup_window">
+        <pre>
+        pt1.14: *******正在执行用例：  14 ---- module:register  **********  无pwdlevel字段
+请求方式：post, 请求url:http://192.168.0.206:8000/eshop/pc/crmMember/registered
+请求头： {'Content-Type': 'application/json'}
+请求params：None
+请求body：{'accountName': 'm7788', 'mobile': '17712132222', 'smsCode': '997788', 'accountPwd': '123456'}
+expect: "msg":"参数安全等级为空"
+statuscode: 200
+用例测试结果:   14----&gt;pass
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='pt1.15' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_api_15</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.15')" >
+        通过</a>
+
+    <div id='div_pt1.15' class="popup_window">
+        <pre>
+        pt1.15: *******正在执行用例：  15 ---- module:login_in  **********  正常功能测试（or 输入正确用户名、密码）
+请求方式：post, 请求url:http://192.168.0.206:8000/eshop/pc/crmMember/login
+请求头： {'Content-Type': 'application/json'}
+请求params：None
+请求body：{'loginName': 'leify', 'password': '123456'}
+expect: "success":true
+statuscode: 200
+用例测试结果:   15----&gt;pass
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='pt1.16' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_api_16</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.16')" >
+        通过</a>
+
+    <div id='div_pt1.16' class="popup_window">
+        <pre>
+        pt1.16: *******正在执行用例：  16 ---- module:login_in  **********  错误密码
+请求方式：post, 请求url:http://192.168.0.206:8000/eshop/pc/crmMember/login
+请求头： {'Content-Type': 'application/json'}
+请求params：None
+请求body：{'loginName': 'leify', 'password': '123457'}
+expect: "msg":"用户名密码不匹配"
+statuscode: 200
+用例测试结果:   16----&gt;pass
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='pt1.17' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_api_17</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.17')" >
+        通过</a>
+
+    <div id='div_pt1.17' class="popup_window">
+        <pre>
+        pt1.17: *******正在执行用例：  17 ---- module:login_in  **********  错误用户名
+请求方式：post, 请求url:http://192.168.0.206:8000/eshop/pc/crmMember/login
+请求头： {'Content-Type': 'application/json'}
+请求params：None
+请求body：{'loginName': 'lei1fy', 'password': '123458'}
+expect: "msg":"用户不存在"
+statuscode: 200
+用例测试结果:   17----&gt;pass
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='pt1.18' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_api_18</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.18')" >
+        通过</a>
+
+    <div id='div_pt1.18' class="popup_window">
+        <pre>
+        pt1.18: *******正在执行用例：  18 ---- module:login_in  **********   用户名为空
+请求方式：post, 请求url:http://192.168.0.206:8000/eshop/pc/crmMember/login
+请求头： {'Content-Type': 'application/json'}
+请求params：None
+请求body：{'loginName': '', 'password': '123459'}
+expect: "msg":"用户名为空"
+statuscode: 200
+用例测试结果:   18----&gt;pass
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='pt1.19' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_api_19</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.19')" >
+        通过</a>
+
+    <div id='div_pt1.19' class="popup_window">
+        <pre>
+        pt1.19: *******正在执行用例：  19 ---- module:login_in  **********   无用户名字段
+请求方式：post, 请求url:http://192.168.0.206:8000/eshop/pc/crmMember/login
+请求头： {'Content-Type': 'application/json'}
+请求params：None
+请求body：{'password': '123460'}
+expect: "msg":"用户名为空"
+statuscode: 200
+用例测试结果:   19----&gt;pass
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='pt1.20' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_api_20</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.20')" >
+        通过</a>
+
+    <div id='div_pt1.20' class="popup_window">
+        <pre>
+        pt1.20: *******正在执行用例：  20 ---- module:login_in  **********   密码为空
+请求方式：post, 请求url:http://192.168.0.206:8000/eshop/pc/crmMember/login
+请求头： {'Content-Type': 'application/json'}
+请求params：None
+请求body：{'loginName': 'leify', 'password': ' '}
+expect: "msg":"密码为空"
+statuscode: 200
+用例测试结果:   20----&gt;pass
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='pt1.21' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_api_21</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.21')" >
+        通过</a>
+
+    <div id='div_pt1.21' class="popup_window">
+        <pre>
+        pt1.21: *******正在执行用例：  21 ---- module:login_in  **********   无密码字段
+请求方式：post, 请求url:http://192.168.0.206:8000/eshop/pc/crmMember/login
+请求头： {'Content-Type': 'application/json'}
+请求params：None
+请求body：{'loginName': 'lei1fy'}
+expect: "msg":"密码为空"
+statuscode: 200
+用例测试结果:   21----&gt;pass
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='pt1.22' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_api_22</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.22')" >
+        通过</a>
+
+    <div id='div_pt1.22' class="popup_window">
+        <pre>
+        pt1.22: Login_in
 *******正在执行用例：  22 ---- module:operation  **********  招标
 请求方式：post, 请求url:http://192.168.0.206:8000/eshop/pc/bid/add
-请求头： {'Content-Type': 'application/json', 'Eshop-Access-Token': 'e1ba7e55e3b74d8dbf21a53b0e3a5071', 'SESSION': 'NWUyOTMxM2UtOTViMC00ZDAxLWJmMTMtYTNiNzA0N2E5M2Jm'}
+请求头： {'Content-Type': 'application/json', 'Eshop-Access-Token': 'b984986eb2724543897082960e013a59', 'SESSION': 'ZDFhMTFkYjQtNTkyMS00MTdhLWJiYmYtNmY3MjEwZjdkODBh'}
 请求params：None
 请求body：{'bidInfo': {'tenderType': 1, 'bidName': '齐桓', 'beginDate': '2020-01-02 00:00', 'endDate': '2020-01-10 00:00', 'askDate': '2020-01-06 00:00', 'isProject': 0}, 'bidDel': {'classId': '14', 'cataTwoId': '100002', 'cataId': '100010', 'subject': [{'subName': '1', 'specName': '21', 'unit': '1', 'bidQty': 10, 'id': '1577759734406'}], 'isSample': 1, 'isDelivery': 0, 'files': [{'isFolder': False, 'isRoot': False, 'id': '11719643450834944', 'fileType': 'application/x-zip-compressed', 'name': 'pconline1482488773765.zip', 'size': 393141, 'relativePath': 'pconline1482488773765.zip', 'paused': False, 'error': False, 'allError': False, 'aborted': False, 'averageSpeed': 0, 'currentSpeed': 0, '_lastProgressCallback': 1577759691175, '_prevUploadedSize': 393141, '_prevProgress': 1, 'uniqueIdentifier': '393141-pconline1482488773765zip', 'ignored': False, 'url': 'https://gdjcywebdata001.oss-cn-shenzhen.aliyuncs.com/d3ba3285ced04ee9b52e235d4171f189.zip', '_progeressId': 1462}], 'value': 1, 'bidExplain': '', 'devDate': 15, 'deliveryInfo': {'areas': [], 'devDelAddress': ''}}, 'supportDemand': {'orgType': 1, 'isNotLimit': True, 'aboveCountNotLimit': True, 'aboveCapNotLimit': True, 'aboveYearNotLimit': True, 'isNeedDeposit': 0, 'aboveCount': 0, 'aboveCap': 0, 'aboveYear': 0}, 'payInfo': {'payExplain': '月结'}, 'contactInfo': {'name': '齐恒公', 'mobile': '13766666666', 'email': '6666666@qq.com'}}
 expect: "msg":"处理成功"
@@ -276,20 +829,20 @@ Logout
     </td>
 </tr>
 
-<tr id='pt1.2' class='hiddenRow'>
-    <td class='none'><div class='testcase'>test_api_2</div></td>
+<tr id='pt1.23' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_api_23</div></td>
     <td colspan='5' align='center'>
 
     <!--css div popup start-->
-    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.2')" >
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.23')" >
         通过</a>
 
-    <div id='div_pt1.2' class="popup_window">
+    <div id='div_pt1.23' class="popup_window">
         <pre>
-        pt1.2: Login_in
+        pt1.23: Login_in
 *******正在执行用例：  23 ---- module:operation  **********  简易招标
 请求方式：post, 请求url:http://192.168.0.206:8000/eshop/pc/bid/postSimpleBid
-请求头： {'Content-Type': 'application/json', 'Eshop-Access-Token': 'dd4042f93a5b44bcb0d236260cab99e8', 'SESSION': 'NjYzYjk5ZTUtYTQ4MC00ODRjLTgzNTYtMzg3OGU0YTVjNDcw'}
+请求头： {'Content-Type': 'application/json', 'Eshop-Access-Token': 'c2bb2566acef4574ba654eccbfcffd5c', 'SESSION': 'YjBiNWQ0YjctMmU3MS00MTlkLTk5ODAtMDVjOTA0ODc4NGVm'}
 请求params：None
 请求body：{'bidInfo': {'tenderType': 1, 'bidName': '赵', 'isProject': 0, 'endDate': '2020-01-02 00:00', 'askDate': '', 'beginDate': '', 'projInfo': {}}, 'bidDel': {'devDate': 5, 'classId': 14, 'cataTwoId': '100003', 'bidCategory': ['100003', '100023', '100145'], 'cataId': '100023', 'subject': [{'subName': '1', 'unit': '1', 'bidQty': 10, 'specName': '1'}], 'files': [{'isFolder': False, 'isRoot': False, 'id': '11722907836219392', 'fileType': 'image/jpeg', 'name': 'wallhaven-0w76pq.jpg', 'size': 774403, 'relativePath': 'wallhaven-0w76pq.jpg', 'paused': False, 'error': False, 'allError': False, 'aborted': False, 'averageSpeed': 0, 'currentSpeed': 0, '_lastProgressCallback': 1577772143695, '_prevUploadedSize': 774403, '_prevProgress': 1, 'uniqueIdentifier': '774403-wallhaven-0w76pqjpg', 'ignored': False, 'url': 'https://gdjcywebdata001.oss-cn-shenzhen.aliyuncs.com/6a8484ff680f4d79b4e181dcfd9051f8.jpg', '_progeressId': 698}]}, 'bidSetting': {'sysInfo': []}, 'contactInfo': {'name': '赵巍王', 'mobile': '15066448899'}, 'payInfo': {}, 'supportDemand': {'areas': [{'areaCode': '440400000000', 'areaName': '珠海市', 'areaLevel': 2, 'parentCode': '440000000000'}]}}
 expect: "msg":"处理成功"
@@ -304,20 +857,20 @@ Logout
     </td>
 </tr>
 
-<tr id='ft1.3' class='none'>
-    <td class='failCase'><div class='testcase'>test_api_3</div></td>
+<tr id='ft1.24' class='none'>
+    <td class='failCase'><div class='testcase'>test_api_24</div></td>
     <td colspan='5' align='center'>
 
     <!--css div popup start-->
-    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.3')" >
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.24')" >
         失败</a>
 
-    <div id='div_ft1.3' class="popup_window">
+    <div id='div_ft1.24' class="popup_window">
         <pre>
-        ft1.3: Login_in
+        ft1.24: Login_in
 *******正在执行用例：  24 ---- module:operation  **********  新增项目
 请求方式：post, 请求url:http://192.168.0.206:8000/eshop/pc/crm/project/addProj
-请求头： {'Content-Type': 'application/json', 'Eshop-Access-Token': '479c74818a834a5a95c5118e56c16a85', 'SESSION': 'MWZmNGZiNjAtZGU0Zi00OTA2LWIzYjctZmRiOTdlZmExMTRi'}
+请求头： {'Content-Type': 'application/json', 'Eshop-Access-Token': '38cf0b66bedf4869a6b065a0f793b81f', 'SESSION': 'MjAxNjA5ZjUtMWY4Yi00Nzk5LTg2MDYtZGFjMjBlY2RhNzNj'}
 请求params：None
 请求body：{'projName': '七国ji1', 'delAddress': '紫禁城', 'areas': [{'areaCode': '110000000000', 'areaName': '北京市', 'areaLevel': 1}, {'areaCode': '110100000000', 'areaName': '北京市', 'areaLevel': 2}, {'areaCode': '110101000000', 'areaName': '东城区', 'areaLevel': 3}]}
 expect: "msg":"处理成功"
@@ -339,20 +892,20 @@ AssertionError: False is not true : expect 检出错误
     </td>
 </tr>
 
-<tr id='pt1.4' class='hiddenRow'>
-    <td class='none'><div class='testcase'>test_api_4</div></td>
+<tr id='pt1.25' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_api_25</div></td>
     <td colspan='5' align='center'>
 
     <!--css div popup start-->
-    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.4')" >
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.25')" >
         通过</a>
 
-    <div id='div_pt1.4' class="popup_window">
+    <div id='div_pt1.25' class="popup_window">
         <pre>
-        pt1.4: Login_in
+        pt1.25: Login_in
 *******正在执行用例：  25 ---- module:operation  **********  项目招标
 请求方式：post, 请求url:http://192.168.0.206:8000/eshop/pc/bid/add
-请求头： {'Content-Type': 'application/json', 'Eshop-Access-Token': '175f7cfe45f94a809c0f40f102e8268e', 'SESSION': 'ZjQ3NzlkNTYtZTFlNy00MWMwLWE3M2EtNGJjZDUzYzM0ZTI1'}
+请求头： {'Content-Type': 'application/json', 'Eshop-Access-Token': 'b329d7aaf9f54cea828247a2a833e9bc', 'SESSION': 'YmM3ZDVhNDItM2RlZC00ZDkwLThlMTQtZmQwODA3OTFkYmQ3'}
 请求params：None
 请求body：{'bidInfo': {'id': '', 'tenderType': 1, 'bidName': '项目6招标', 'bidUnit': '', 'beginDate': '2019-12-31 14:25', 'endDate': '2020-12-02 00:00', 'askDate': '2020-01-17 00:00', 'isProject': 1, 'projInfo': {'id': '11723090723602432', 'projName': '七国争霸', 'areas': [{'areaCode': '110000000000', 'areaName': '北京市', 'areaLevel': 1}, {'areaCode': '110100000000', 'areaName': '北京市', 'areaLevel': 2}, {'areaCode': '110101000000', 'areaName': '东城区', 'areaLevel': 3}], 'delAddress': '紫禁城', 'projIntro': '', 'images': [{'imgUrl': 'https://gdjcywebdata001.oss-cn-shenzhen.aliyuncs.com/d49d0d1ab0804b38bbcbe49a6fa526d5.jpg', 'imgId': '11723109637029888', 'name': 'wallhaven-0w76pq.jpg'}], 'canEdit': False}}, 'bidDel': {'classId': '14', 'cataTwoId': '100009', 'cataId': '100062', 'subject': [{'subName': '1', 'specName': '1', 'brandName': '', 'oriName': '', 'unit': '1', 'bidQty': 10, 'remark': '', 'id': '1577773722727'}], 'isSample': 1, 'isDelivery': 1, 'files': [{'isFolder': False, 'isRoot': False, 'id': '11723296844021760', 'fileType': 'application/x-zip-compressed', 'name': 'pconline1482488773765.zip', 'size': 393141, 'relativePath': 'pconline1482488773765.zip', 'paused': False, 'error': False, 'allError': False, 'aborted': False, 'averageSpeed': 0, 'currentSpeed': 0, '_lastProgressCallback': 1577773627618, '_prevUploadedSize': 393141, '_prevProgress': 1, 'uniqueIdentifier': '393141-pconline1482488773765zip', 'ignored': False, 'url': 'https://gdjcywebdata001.oss-cn-shenzhen.aliyuncs.com/47e31eed07d9482eb89fe7ba7339b320.zip', '_progeressId': 12488}], 'value': 3, 'bidExplain': '', 'devDate': 16, 'deliveryInfo': {'areas': [{'areaCode': '130000000000', 'areaName': '河北省', 'areaLevel': 1}, {'areaCode': '130100000000', 'areaName': '石家庄市', 'areaLevel': 2}], 'devDelAddress': '1号'}}, 'supportDemand': {'aboveCount': 1, 'aboveCap': 1, 'aboveYear': 1, 'orgType': 1, 'isNotLimit': True, 'areas': [], 'document': [{'dataItem': '营业执照', 'requireType': 2}], 'aboveCountNotLimit': False, 'aboveCapNotLimit': False, 'aboveYearNotLimit': False, 'depositRemark': '押金', 'depositAmount': 111, 'isNeedDeposit': 1}, 'payInfo': {'payExplain': '月结'}, 'bidSetting': {'sysInfo': [], 'notMember': [], 'bookMember': []}, 'contactInfo': {'name': '启翔', 'mobile': '13666666666', 'email': '89889898@qq.com', 'phone': '-', 'code': '', 'telephone': ''}}
 expect: "msg":"处理成功"
@@ -367,20 +920,20 @@ Logout
     </td>
 </tr>
 
-<tr id='pt1.5' class='hiddenRow'>
-    <td class='none'><div class='testcase'>test_api_5</div></td>
+<tr id='pt1.26' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_api_26</div></td>
     <td colspan='5' align='center'>
 
     <!--css div popup start-->
-    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.5')" >
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.26')" >
         通过</a>
 
-    <div id='div_pt1.5' class="popup_window">
+    <div id='div_pt1.26' class="popup_window">
         <pre>
-        pt1.5: Login_in
+        pt1.26: Login_in
 *******正在执行用例：  26 ---- module:operation  **********  定向邀标
 请求方式：post, 请求url:http://192.168.0.206:8000/eshop/pc/bid/add
-请求头： {'Content-Type': 'application/json', 'Eshop-Access-Token': 'a3f700cef40c4d2c91edab8aa2a815d5', 'SESSION': 'MWIxMzZkNWItMjRjNS00YTJjLWIxYzQtN2Y4Y2YwMjFlZTAw'}
+请求头： {'Content-Type': 'application/json', 'Eshop-Access-Token': '4e59178ba5524762a1c7d6fb59897127', 'SESSION': 'YzUxODM5ODYtYzNhMC00YzllLWFiNTQtNjdiNmQ0Yjk5NDgz'}
 请求params：None
 请求body：{'bidInfo': {'id': '', 'tenderType': 2, 'bidName': '燕13', 'bidUnit': '', 'beginDate': '2019-12-31 14:34', 'endDate': '2019-12-31 16:00', 'askDate': '2019-12-31 15:01', 'isProject': 0, 'projInfo': {}}, 'bidDel': {'classId': '17', 'cataTwoId': '179', 'subject': [{'subName': '1', 'specName': '1', 'brandName': '1', 'oriName': '1', 'unit': '1', 'reserved': '1', 'bidQty': 10, 'remark': '1', 'id': '1577774119955'}], 'isSample': 0, 'isDelivery': 0, 'files': [{'isFolder': False, 'isRoot': False, 'id': '11723434421649408', 'fileType': 'application/x-zip-compressed', 'name': 'pconline1482488773765.zip', 'size': 393141, 'relativePath': 'pconline1482488773765.zip', 'paused': False, 'error': False, 'allError': False, 'aborted': False, 'averageSpeed': 0, 'currentSpeed': 0, '_lastProgressCallback': 1577774152422, '_prevUploadedSize': 393141, '_prevProgress': 1, 'uniqueIdentifier': '393141-pconline1482488773765zip', 'ignored': False, 'url': 'https://gdjcywebdata001.oss-cn-shenzhen.aliyuncs.com/b132b942d4884bd18753b20308b68d2c.zip', '_progeressId': 19450}], 'value': 2, 'bidExplain': '', 'devDate': 1, 'deliveryInfo': {'areas': [], 'devDelAddress': ''}}, 'supportDemand': {'orgType': 1, 'isNotLimit': True, 'areas': [], 'document': [], 'aboveCountNotLimit': True, 'aboveCapNotLimit': True, 'aboveYearNotLimit': True, 'depositRemark': '', 'isNeedDeposit': 0, 'aboveCount': 0, 'aboveCap': 0, 'aboveYear': 0}, 'payInfo': {'payExplain': '到付'}, 'bidSetting': {'sysInfo': [{'name': '广州天祥建筑劳务有限公司', 'mobile': '15818837778', 'id': '3371503169306624'}], 'notMember': [], 'bookMember': []}, 'contactInfo': {'name': '燕洵', 'mobile': '13789898989', 'email': '4562131@177.com', 'phone': '-', 'code': '', 'telephone': ''}}
 expect: "msg":"处理成功"
@@ -395,20 +948,20 @@ Logout
     </td>
 </tr>
 
-<tr id='pt1.6' class='hiddenRow'>
-    <td class='none'><div class='testcase'>test_api_6</div></td>
+<tr id='pt1.27' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_api_27</div></td>
     <td colspan='5' align='center'>
 
     <!--css div popup start-->
-    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.6')" >
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.27')" >
         通过</a>
 
-    <div id='div_pt1.6' class="popup_window">
+    <div id='div_pt1.27' class="popup_window">
         <pre>
-        pt1.6: Login_in
+        pt1.27: Login_in
 *******正在执行用例：  27 ---- module:operation  **********  投标
 请求方式：put, 请求url:http://192.168.0.206:8000/eshop/pc/tender/postTender
-请求头： {'Content-Type': 'application/json', 'Eshop-Access-Token': 'e5c79023ca994d69a9f58392d625d219', 'SESSION': 'NTVjZDUxZjEtNGViNS00NmQ4LWI3OGUtMjI1Y2ZhOWJkZTVm'}
+请求头： {'Content-Type': 'application/json', 'Eshop-Access-Token': 'ae4691b0e11c4690add4846dcbffbad3', 'SESSION': 'MjJiMWI3OGUtMDk5ZC00ZGZmLWJkZmQtNGM4ZTIyM2Y5OTlk'}
 请求params：None
 请求body：{'baseInfo': {}, 'required': {}, 'value': [{'subMatterId': '11720045850787840', 'tenderPrice': '6', 'bidQty': 10}], 'upload': {'files': [{'isFolder': False, 'isRoot': False, 'id': '11771794235326464', 'fileType': 'application/x-zip-compressed', 'name': 'pconline1482488773765.zip', 'size': 393141, 'relativePath': 'pconline1482488773765.zip', 'paused': False, 'error': False, 'allError': False, 'aborted': False, 'averageSpeed': 0, 'currentSpeed': 0, '_lastProgressCallback': 1577958630274, '_prevUploadedSize': 393141, '_prevProgress': 1, 'uniqueIdentifier': '393141-pconline1482488773765zip', 'ignored': False, 'url': 'https://gdjcywebdata001.oss-cn-shenzhen.aliyuncs.com/84567db3c30349649c7083235cb65fd4.zip', '_progeressId': 19}], 'tenderAmount': 123}, 'contact': {'contactsName': '123', 'contactsMobile': '13111111111', 'contactsEmail': '123221@qq.qqq'}, 'bidId': '11720045842137088', 'bidType': 'BDA'}
 expect: "提交我的投标成功"
@@ -425,9 +978,9 @@ Logout
 
         <tr id='total_row'>
             <td>总计</td>
-            <td>6</td>
-            <td>5</td>
-            <td>1</td>
+            <td>27</td>
+            <td>25</td>
+            <td>2</td>
             <td>0</td>
             <td>&nbsp;</td>
             <th>&nbsp;</th>
@@ -499,18 +1052,18 @@ Logout
                 {
                     name:'所有',
                     type:'bar',
-                    data:[6]
+                    data:[27]
                 },
                 {
                     name:'成功',
                     type:'bar',
-                    data:[5]
+                    data:[25]
                     //data:[ 20]
                 },
                 {
                     name:'失败',
                     type:'bar',
-                    data:[1]
+                    data:[2]
                 },
                 {
                     name:'错误',
@@ -522,7 +1075,7 @@ Logout
             ]
         };
         myChartline.setOption(optionline);
-        console.log(1,5,0)
+        console.log(2,25,0)
             // 基于准备好的dom，初始化echarts实例
             var myChart = echarts.init(document.getElementById('chart'));
 
@@ -548,8 +1101,8 @@ Logout
                         radius : '60%',
                         center: ['50%', '60%'],
                         data:[
-                            {value:5, name:'通过'},
-                            {value:1, name:'失败'},
+                            {value:25, name:'通过'},
+                            {value:2, name:'失败'},
                             {value:0, name:'错误'}
                         ],
                         itemStyle: {

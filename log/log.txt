@@ -4450,3 +4450,1091 @@ ZeroDivisionError: float division by zero
 2020-01-03 17:09:39,194 - main.py - [line:39] - INFO - process end
 2020-01-03 17:09:39,194 - main.py - [line:39] - INFO - process end
 2020-01-03 17:09:39,194 - main.py - [line:39] - INFO - process end
+2020-01-06 10:50:01,660 - send_email.py - [line:63] - ERROR - (<class 'AttributeError'>, AttributeError("'SendMail' object has no attribute 'message'"), <traceback object at 0x000002289D712080>)
+Traceback (most recent call last):
+  File "D:/Python_field/StartField/base/send_email.py", line 60, in send
+    server.sendmail(self.username, [self.recv, ], self.message.as_string())  # 括号中对应的是发件人邮箱账号、收件人邮箱账号、发送邮件
+AttributeError: 'SendMail' object has no attribute 'message'
+2020-01-06 14:04:44,266 - test_html.py - [line:9] - INFO - info
+2020-01-06 14:04:44,292 - main.py - [line:16] - INFO - main
+2020-01-06 14:04:44,292 - main.py - [line:16] - INFO - main
+2020-01-06 14:04:44,292 - main.py - [line:16] - INFO - main
+2020-01-06 14:04:45,403 - read_Excel.py - [line:6] - INFO - info
+2020-01-06 14:04:45,403 - read_Excel.py - [line:6] - INFO - info
+2020-01-06 14:04:45,403 - read_Excel.py - [line:6] - INFO - info
+2020-01-06 14:04:45,403 - read_Excel.py - [line:6] - INFO - info
+2020-01-06 14:04:45,406 - test_api.py - [line:16] - INFO - info
+2020-01-06 14:04:45,406 - test_api.py - [line:16] - INFO - info
+2020-01-06 14:04:45,406 - test_api.py - [line:16] - INFO - info
+2020-01-06 14:04:45,406 - test_api.py - [line:16] - INFO - info
+2020-01-06 14:04:45,406 - test_api.py - [line:16] - INFO - info
+2020-01-06 14:04:45,406 - test_api.py - [line:16] - INFO - info
+2020-01-06 14:04:45,485 - test_html.py - [line:9] - INFO - info
+2020-01-06 14:04:45,485 - test_html.py - [line:9] - INFO - info
+2020-01-06 14:04:45,485 - test_html.py - [line:9] - INFO - info
+2020-01-06 14:04:45,485 - test_html.py - [line:9] - INFO - info
+2020-01-06 14:04:45,485 - test_html.py - [line:9] - INFO - info
+2020-01-06 14:04:45,485 - test_html.py - [line:9] - INFO - info
+2020-01-06 14:04:45,485 - test_html.py - [line:9] - INFO - info
+2020-01-06 14:04:46,007 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:04:46,007 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:04:46,007 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:04:46,007 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:04:46,007 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:04:46,007 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:04:46,007 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:04:47,194 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:04:47,194 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:04:47,194 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:04:47,194 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:04:47,194 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:04:47,194 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:04:47,194 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:04:48,925 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:04:48,925 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:04:48,925 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:04:48,925 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:04:48,925 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:04:48,925 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:04:48,925 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:04:49,929 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:04:49,929 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:04:49,929 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:04:49,929 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:04:49,929 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:04:49,929 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:04:49,929 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:04:51,405 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:04:51,405 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:04:51,405 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:04:51,405 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:04:51,405 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:04:51,405 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:04:51,405 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:04:52,836 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:04:52,836 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:04:52,836 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:04:52,836 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:04:52,836 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:04:52,836 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:04:52,836 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:04:53,733 - main.py - [line:39] - ERROR - (<class 'FileNotFoundError'>, FileNotFoundError(2, 'No such file or directory'), <traceback object at 0x000001690C2B9E40>)
+Traceback (most recent call last):
+  File "D:/Python_field/StartField/main.py", line 37, in <module>
+    run()
+  File "D:/Python_field/StartField/main.py", line 32, in run
+    SendMail(Sender, PassWD, Receivers, '接口自动化测试', content="自动化测试：\n   测试用例： test_case.xlsx\n   测试结果： result.xlsx 、result.html ").send()
+  File "D:\Python_field\StartField\base\send_email.py", line 64, in send
+    att3 = MIMEText(open('../test_report/result.html', 'rb').read(), 'base64', 'utf-8')
+FileNotFoundError: [Errno 2] No such file or directory: '../test_report/result.html'
+2020-01-06 14:04:53,733 - main.py - [line:39] - ERROR - (<class 'FileNotFoundError'>, FileNotFoundError(2, 'No such file or directory'), <traceback object at 0x000001690C2B9E40>)
+Traceback (most recent call last):
+  File "D:/Python_field/StartField/main.py", line 37, in <module>
+    run()
+  File "D:/Python_field/StartField/main.py", line 32, in run
+    SendMail(Sender, PassWD, Receivers, '接口自动化测试', content="自动化测试：\n   测试用例： test_case.xlsx\n   测试结果： result.xlsx 、result.html ").send()
+  File "D:\Python_field\StartField\base\send_email.py", line 64, in send
+    att3 = MIMEText(open('../test_report/result.html', 'rb').read(), 'base64', 'utf-8')
+FileNotFoundError: [Errno 2] No such file or directory: '../test_report/result.html'
+2020-01-06 14:04:53,733 - main.py - [line:39] - ERROR - (<class 'FileNotFoundError'>, FileNotFoundError(2, 'No such file or directory'), <traceback object at 0x000001690C2B9E40>)
+Traceback (most recent call last):
+  File "D:/Python_field/StartField/main.py", line 37, in <module>
+    run()
+  File "D:/Python_field/StartField/main.py", line 32, in run
+    SendMail(Sender, PassWD, Receivers, '接口自动化测试', content="自动化测试：\n   测试用例： test_case.xlsx\n   测试结果： result.xlsx 、result.html ").send()
+  File "D:\Python_field\StartField\base\send_email.py", line 64, in send
+    att3 = MIMEText(open('../test_report/result.html', 'rb').read(), 'base64', 'utf-8')
+FileNotFoundError: [Errno 2] No such file or directory: '../test_report/result.html'
+2020-01-06 14:04:53,733 - main.py - [line:39] - ERROR - (<class 'FileNotFoundError'>, FileNotFoundError(2, 'No such file or directory'), <traceback object at 0x000001690C2B9E40>)
+Traceback (most recent call last):
+  File "D:/Python_field/StartField/main.py", line 37, in <module>
+    run()
+  File "D:/Python_field/StartField/main.py", line 32, in run
+    SendMail(Sender, PassWD, Receivers, '接口自动化测试', content="自动化测试：\n   测试用例： test_case.xlsx\n   测试结果： result.xlsx 、result.html ").send()
+  File "D:\Python_field\StartField\base\send_email.py", line 64, in send
+    att3 = MIMEText(open('../test_report/result.html', 'rb').read(), 'base64', 'utf-8')
+FileNotFoundError: [Errno 2] No such file or directory: '../test_report/result.html'
+2020-01-06 14:04:53,733 - main.py - [line:39] - ERROR - (<class 'FileNotFoundError'>, FileNotFoundError(2, 'No such file or directory'), <traceback object at 0x000001690C2B9E40>)
+Traceback (most recent call last):
+  File "D:/Python_field/StartField/main.py", line 37, in <module>
+    run()
+  File "D:/Python_field/StartField/main.py", line 32, in run
+    SendMail(Sender, PassWD, Receivers, '接口自动化测试', content="自动化测试：\n   测试用例： test_case.xlsx\n   测试结果： result.xlsx 、result.html ").send()
+  File "D:\Python_field\StartField\base\send_email.py", line 64, in send
+    att3 = MIMEText(open('../test_report/result.html', 'rb').read(), 'base64', 'utf-8')
+FileNotFoundError: [Errno 2] No such file or directory: '../test_report/result.html'
+2020-01-06 14:04:53,733 - main.py - [line:39] - ERROR - (<class 'FileNotFoundError'>, FileNotFoundError(2, 'No such file or directory'), <traceback object at 0x000001690C2B9E40>)
+Traceback (most recent call last):
+  File "D:/Python_field/StartField/main.py", line 37, in <module>
+    run()
+  File "D:/Python_field/StartField/main.py", line 32, in run
+    SendMail(Sender, PassWD, Receivers, '接口自动化测试', content="自动化测试：\n   测试用例： test_case.xlsx\n   测试结果： result.xlsx 、result.html ").send()
+  File "D:\Python_field\StartField\base\send_email.py", line 64, in send
+    att3 = MIMEText(open('../test_report/result.html', 'rb').read(), 'base64', 'utf-8')
+FileNotFoundError: [Errno 2] No such file or directory: '../test_report/result.html'
+2020-01-06 14:04:53,733 - main.py - [line:39] - ERROR - (<class 'FileNotFoundError'>, FileNotFoundError(2, 'No such file or directory'), <traceback object at 0x000001690C2B9E40>)
+Traceback (most recent call last):
+  File "D:/Python_field/StartField/main.py", line 37, in <module>
+    run()
+  File "D:/Python_field/StartField/main.py", line 32, in run
+    SendMail(Sender, PassWD, Receivers, '接口自动化测试', content="自动化测试：\n   测试用例： test_case.xlsx\n   测试结果： result.xlsx 、result.html ").send()
+  File "D:\Python_field\StartField\base\send_email.py", line 64, in send
+    att3 = MIMEText(open('../test_report/result.html', 'rb').read(), 'base64', 'utf-8')
+FileNotFoundError: [Errno 2] No such file or directory: '../test_report/result.html'
+2020-01-06 14:04:53,735 - main.py - [line:41] - INFO - process end
+2020-01-06 14:04:53,735 - main.py - [line:41] - INFO - process end
+2020-01-06 14:04:53,735 - main.py - [line:41] - INFO - process end
+2020-01-06 14:04:53,735 - main.py - [line:41] - INFO - process end
+2020-01-06 14:04:53,735 - main.py - [line:41] - INFO - process end
+2020-01-06 14:04:53,735 - main.py - [line:41] - INFO - process end
+2020-01-06 14:04:53,735 - main.py - [line:41] - INFO - process end
+2020-01-06 14:07:24,479 - test_html.py - [line:9] - INFO - info
+2020-01-06 14:07:24,498 - main.py - [line:16] - INFO - main
+2020-01-06 14:07:24,498 - main.py - [line:16] - INFO - main
+2020-01-06 14:07:24,498 - main.py - [line:16] - INFO - main
+2020-01-06 14:07:25,581 - read_Excel.py - [line:6] - INFO - info
+2020-01-06 14:07:25,581 - read_Excel.py - [line:6] - INFO - info
+2020-01-06 14:07:25,581 - read_Excel.py - [line:6] - INFO - info
+2020-01-06 14:07:25,581 - read_Excel.py - [line:6] - INFO - info
+2020-01-06 14:07:25,585 - test_api.py - [line:16] - INFO - info
+2020-01-06 14:07:25,585 - test_api.py - [line:16] - INFO - info
+2020-01-06 14:07:25,585 - test_api.py - [line:16] - INFO - info
+2020-01-06 14:07:25,585 - test_api.py - [line:16] - INFO - info
+2020-01-06 14:07:25,585 - test_api.py - [line:16] - INFO - info
+2020-01-06 14:07:25,585 - test_api.py - [line:16] - INFO - info
+2020-01-06 14:07:25,672 - test_html.py - [line:9] - INFO - info
+2020-01-06 14:07:25,672 - test_html.py - [line:9] - INFO - info
+2020-01-06 14:07:25,672 - test_html.py - [line:9] - INFO - info
+2020-01-06 14:07:25,672 - test_html.py - [line:9] - INFO - info
+2020-01-06 14:07:25,672 - test_html.py - [line:9] - INFO - info
+2020-01-06 14:07:25,672 - test_html.py - [line:9] - INFO - info
+2020-01-06 14:07:25,672 - test_html.py - [line:9] - INFO - info
+2020-01-06 14:07:26,084 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:07:26,084 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:07:26,084 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:07:26,084 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:07:26,084 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:07:26,084 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:07:26,084 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:07:27,314 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:07:27,314 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:07:27,314 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:07:27,314 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:07:27,314 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:07:27,314 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:07:27,314 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:07:28,770 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:07:28,770 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:07:28,770 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:07:28,770 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:07:28,770 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:07:28,770 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:07:28,770 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:07:29,651 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:07:29,651 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:07:29,651 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:07:29,651 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:07:29,651 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:07:29,651 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:07:29,651 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:07:30,860 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:07:30,860 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:07:30,860 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:07:30,860 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:07:30,860 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:07:30,860 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:07:30,860 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:07:32,006 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:07:32,006 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:07:32,006 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:07:32,006 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:07:32,006 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:07:32,006 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:07:32,006 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:07:32,594 - main.py - [line:40] - ERROR - (<class 'FileNotFoundError'>, FileNotFoundError(2, 'No such file or directory'), <traceback object at 0x000001807F310240>)
+Traceback (most recent call last):
+  File "D:/Python_field/StartField/main.py", line 38, in <module>
+    run()
+  File "D:/Python_field/StartField/main.py", line 33, in run
+    send_mail.send()
+  File "D:\Python_field\StartField\base\send_email.py", line 64, in send
+    att3 = MIMEText(open('../test_report/result.html', 'rb').read(), 'base64', 'utf-8')
+FileNotFoundError: [Errno 2] No such file or directory: '../test_report/result.html'
+2020-01-06 14:07:32,594 - main.py - [line:40] - ERROR - (<class 'FileNotFoundError'>, FileNotFoundError(2, 'No such file or directory'), <traceback object at 0x000001807F310240>)
+Traceback (most recent call last):
+  File "D:/Python_field/StartField/main.py", line 38, in <module>
+    run()
+  File "D:/Python_field/StartField/main.py", line 33, in run
+    send_mail.send()
+  File "D:\Python_field\StartField\base\send_email.py", line 64, in send
+    att3 = MIMEText(open('../test_report/result.html', 'rb').read(), 'base64', 'utf-8')
+FileNotFoundError: [Errno 2] No such file or directory: '../test_report/result.html'
+2020-01-06 14:07:32,594 - main.py - [line:40] - ERROR - (<class 'FileNotFoundError'>, FileNotFoundError(2, 'No such file or directory'), <traceback object at 0x000001807F310240>)
+Traceback (most recent call last):
+  File "D:/Python_field/StartField/main.py", line 38, in <module>
+    run()
+  File "D:/Python_field/StartField/main.py", line 33, in run
+    send_mail.send()
+  File "D:\Python_field\StartField\base\send_email.py", line 64, in send
+    att3 = MIMEText(open('../test_report/result.html', 'rb').read(), 'base64', 'utf-8')
+FileNotFoundError: [Errno 2] No such file or directory: '../test_report/result.html'
+2020-01-06 14:07:32,594 - main.py - [line:40] - ERROR - (<class 'FileNotFoundError'>, FileNotFoundError(2, 'No such file or directory'), <traceback object at 0x000001807F310240>)
+Traceback (most recent call last):
+  File "D:/Python_field/StartField/main.py", line 38, in <module>
+    run()
+  File "D:/Python_field/StartField/main.py", line 33, in run
+    send_mail.send()
+  File "D:\Python_field\StartField\base\send_email.py", line 64, in send
+    att3 = MIMEText(open('../test_report/result.html', 'rb').read(), 'base64', 'utf-8')
+FileNotFoundError: [Errno 2] No such file or directory: '../test_report/result.html'
+2020-01-06 14:07:32,594 - main.py - [line:40] - ERROR - (<class 'FileNotFoundError'>, FileNotFoundError(2, 'No such file or directory'), <traceback object at 0x000001807F310240>)
+Traceback (most recent call last):
+  File "D:/Python_field/StartField/main.py", line 38, in <module>
+    run()
+  File "D:/Python_field/StartField/main.py", line 33, in run
+    send_mail.send()
+  File "D:\Python_field\StartField\base\send_email.py", line 64, in send
+    att3 = MIMEText(open('../test_report/result.html', 'rb').read(), 'base64', 'utf-8')
+FileNotFoundError: [Errno 2] No such file or directory: '../test_report/result.html'
+2020-01-06 14:07:32,594 - main.py - [line:40] - ERROR - (<class 'FileNotFoundError'>, FileNotFoundError(2, 'No such file or directory'), <traceback object at 0x000001807F310240>)
+Traceback (most recent call last):
+  File "D:/Python_field/StartField/main.py", line 38, in <module>
+    run()
+  File "D:/Python_field/StartField/main.py", line 33, in run
+    send_mail.send()
+  File "D:\Python_field\StartField\base\send_email.py", line 64, in send
+    att3 = MIMEText(open('../test_report/result.html', 'rb').read(), 'base64', 'utf-8')
+FileNotFoundError: [Errno 2] No such file or directory: '../test_report/result.html'
+2020-01-06 14:07:32,594 - main.py - [line:40] - ERROR - (<class 'FileNotFoundError'>, FileNotFoundError(2, 'No such file or directory'), <traceback object at 0x000001807F310240>)
+Traceback (most recent call last):
+  File "D:/Python_field/StartField/main.py", line 38, in <module>
+    run()
+  File "D:/Python_field/StartField/main.py", line 33, in run
+    send_mail.send()
+  File "D:\Python_field\StartField\base\send_email.py", line 64, in send
+    att3 = MIMEText(open('../test_report/result.html', 'rb').read(), 'base64', 'utf-8')
+FileNotFoundError: [Errno 2] No such file or directory: '../test_report/result.html'
+2020-01-06 14:07:32,596 - main.py - [line:42] - INFO - process end
+2020-01-06 14:07:32,596 - main.py - [line:42] - INFO - process end
+2020-01-06 14:07:32,596 - main.py - [line:42] - INFO - process end
+2020-01-06 14:07:32,596 - main.py - [line:42] - INFO - process end
+2020-01-06 14:07:32,596 - main.py - [line:42] - INFO - process end
+2020-01-06 14:07:32,596 - main.py - [line:42] - INFO - process end
+2020-01-06 14:07:32,596 - main.py - [line:42] - INFO - process end
+2020-01-06 14:09:48,349 - test_html.py - [line:9] - INFO - info
+2020-01-06 14:09:48,370 - main.py - [line:16] - INFO - main
+2020-01-06 14:09:48,370 - main.py - [line:16] - INFO - main
+2020-01-06 14:09:48,370 - main.py - [line:16] - INFO - main
+2020-01-06 14:09:49,431 - read_Excel.py - [line:6] - INFO - info
+2020-01-06 14:09:49,431 - read_Excel.py - [line:6] - INFO - info
+2020-01-06 14:09:49,431 - read_Excel.py - [line:6] - INFO - info
+2020-01-06 14:09:49,431 - read_Excel.py - [line:6] - INFO - info
+2020-01-06 14:09:49,434 - test_api.py - [line:16] - INFO - info
+2020-01-06 14:09:49,434 - test_api.py - [line:16] - INFO - info
+2020-01-06 14:09:49,434 - test_api.py - [line:16] - INFO - info
+2020-01-06 14:09:49,434 - test_api.py - [line:16] - INFO - info
+2020-01-06 14:09:49,434 - test_api.py - [line:16] - INFO - info
+2020-01-06 14:09:49,434 - test_api.py - [line:16] - INFO - info
+2020-01-06 14:09:49,518 - test_html.py - [line:9] - INFO - info
+2020-01-06 14:09:49,518 - test_html.py - [line:9] - INFO - info
+2020-01-06 14:09:49,518 - test_html.py - [line:9] - INFO - info
+2020-01-06 14:09:49,518 - test_html.py - [line:9] - INFO - info
+2020-01-06 14:09:49,518 - test_html.py - [line:9] - INFO - info
+2020-01-06 14:09:49,518 - test_html.py - [line:9] - INFO - info
+2020-01-06 14:09:49,518 - test_html.py - [line:9] - INFO - info
+2020-01-06 14:09:49,934 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:09:49,934 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:09:49,934 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:09:49,934 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:09:49,934 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:09:49,934 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:09:49,934 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:09:51,108 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:09:51,108 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:09:51,108 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:09:51,108 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:09:51,108 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:09:51,108 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:09:51,108 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:09:54,152 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:09:54,152 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:09:54,152 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:09:54,152 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:09:54,152 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:09:54,152 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:09:54,152 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:09:55,519 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:09:55,519 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:09:55,519 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:09:55,519 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:09:55,519 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:09:55,519 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:09:55,519 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:09:56,794 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:09:56,794 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:09:56,794 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:09:56,794 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:09:56,794 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:09:56,794 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:09:56,794 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:09:57,951 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:09:57,951 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:09:57,951 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:09:57,951 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:09:57,951 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:09:57,951 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:09:57,951 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:10:02,645 - main.py - [line:42] - INFO - process end
+2020-01-06 14:10:02,645 - main.py - [line:42] - INFO - process end
+2020-01-06 14:10:02,645 - main.py - [line:42] - INFO - process end
+2020-01-06 14:10:02,645 - main.py - [line:42] - INFO - process end
+2020-01-06 14:10:02,645 - main.py - [line:42] - INFO - process end
+2020-01-06 14:10:02,645 - main.py - [line:42] - INFO - process end
+2020-01-06 14:10:02,645 - main.py - [line:42] - INFO - process end
+2020-01-06 14:24:08,449 - test_html.py - [line:9] - INFO - info
+2020-01-06 14:24:08,471 - main.py - [line:16] - INFO - main
+2020-01-06 14:24:08,471 - main.py - [line:16] - INFO - main
+2020-01-06 14:24:08,471 - main.py - [line:16] - INFO - main
+2020-01-06 14:24:09,543 - read_Excel.py - [line:6] - INFO - info
+2020-01-06 14:24:09,543 - read_Excel.py - [line:6] - INFO - info
+2020-01-06 14:24:09,543 - read_Excel.py - [line:6] - INFO - info
+2020-01-06 14:24:09,543 - read_Excel.py - [line:6] - INFO - info
+2020-01-06 14:24:09,545 - test_api.py - [line:16] - INFO - info
+2020-01-06 14:24:09,545 - test_api.py - [line:16] - INFO - info
+2020-01-06 14:24:09,545 - test_api.py - [line:16] - INFO - info
+2020-01-06 14:24:09,545 - test_api.py - [line:16] - INFO - info
+2020-01-06 14:24:09,545 - test_api.py - [line:16] - INFO - info
+2020-01-06 14:24:09,545 - test_api.py - [line:16] - INFO - info
+2020-01-06 14:24:09,625 - test_html.py - [line:9] - INFO - info
+2020-01-06 14:24:09,625 - test_html.py - [line:9] - INFO - info
+2020-01-06 14:24:09,625 - test_html.py - [line:9] - INFO - info
+2020-01-06 14:24:09,625 - test_html.py - [line:9] - INFO - info
+2020-01-06 14:24:09,625 - test_html.py - [line:9] - INFO - info
+2020-01-06 14:24:09,625 - test_html.py - [line:9] - INFO - info
+2020-01-06 14:24:09,625 - test_html.py - [line:9] - INFO - info
+2020-01-06 14:24:10,051 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:24:10,051 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:24:10,051 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:24:10,051 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:24:10,051 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:24:10,051 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:24:10,051 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:24:11,129 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:24:11,129 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:24:11,129 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:24:11,129 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:24:11,129 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:24:11,129 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:24:11,129 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:24:12,691 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:24:12,691 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:24:12,691 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:24:12,691 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:24:12,691 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:24:12,691 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:24:12,691 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:24:13,511 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:24:13,511 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:24:13,511 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:24:13,511 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:24:13,511 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:24:13,511 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:24:13,511 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:24:14,716 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:24:14,716 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:24:14,716 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:24:14,716 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:24:14,716 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:24:14,716 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:24:14,716 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:24:15,763 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:24:15,763 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:24:15,763 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:24:15,763 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:24:15,763 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:24:15,763 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:24:15,763 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:24:16,608 - main.py - [line:41] - ERROR - (<class 'TypeError'>, TypeError("__init__() got an unexpected keyword argument 'receivers'"), <traceback object at 0x0000025EE17D0D00>)
+Traceback (most recent call last):
+  File "D:/Python_field/StartField/main.py", line 39, in <module>
+    run()
+  File "D:/Python_field/StartField/main.py", line 32, in run
+    send_mail = SendMail(Sender, PassWD, Receiver,
+TypeError: __init__() got an unexpected keyword argument 'receivers'
+2020-01-06 14:24:16,608 - main.py - [line:41] - ERROR - (<class 'TypeError'>, TypeError("__init__() got an unexpected keyword argument 'receivers'"), <traceback object at 0x0000025EE17D0D00>)
+Traceback (most recent call last):
+  File "D:/Python_field/StartField/main.py", line 39, in <module>
+    run()
+  File "D:/Python_field/StartField/main.py", line 32, in run
+    send_mail = SendMail(Sender, PassWD, Receiver,
+TypeError: __init__() got an unexpected keyword argument 'receivers'
+2020-01-06 14:24:16,608 - main.py - [line:41] - ERROR - (<class 'TypeError'>, TypeError("__init__() got an unexpected keyword argument 'receivers'"), <traceback object at 0x0000025EE17D0D00>)
+Traceback (most recent call last):
+  File "D:/Python_field/StartField/main.py", line 39, in <module>
+    run()
+  File "D:/Python_field/StartField/main.py", line 32, in run
+    send_mail = SendMail(Sender, PassWD, Receiver,
+TypeError: __init__() got an unexpected keyword argument 'receivers'
+2020-01-06 14:24:16,608 - main.py - [line:41] - ERROR - (<class 'TypeError'>, TypeError("__init__() got an unexpected keyword argument 'receivers'"), <traceback object at 0x0000025EE17D0D00>)
+Traceback (most recent call last):
+  File "D:/Python_field/StartField/main.py", line 39, in <module>
+    run()
+  File "D:/Python_field/StartField/main.py", line 32, in run
+    send_mail = SendMail(Sender, PassWD, Receiver,
+TypeError: __init__() got an unexpected keyword argument 'receivers'
+2020-01-06 14:24:16,608 - main.py - [line:41] - ERROR - (<class 'TypeError'>, TypeError("__init__() got an unexpected keyword argument 'receivers'"), <traceback object at 0x0000025EE17D0D00>)
+Traceback (most recent call last):
+  File "D:/Python_field/StartField/main.py", line 39, in <module>
+    run()
+  File "D:/Python_field/StartField/main.py", line 32, in run
+    send_mail = SendMail(Sender, PassWD, Receiver,
+TypeError: __init__() got an unexpected keyword argument 'receivers'
+2020-01-06 14:24:16,608 - main.py - [line:41] - ERROR - (<class 'TypeError'>, TypeError("__init__() got an unexpected keyword argument 'receivers'"), <traceback object at 0x0000025EE17D0D00>)
+Traceback (most recent call last):
+  File "D:/Python_field/StartField/main.py", line 39, in <module>
+    run()
+  File "D:/Python_field/StartField/main.py", line 32, in run
+    send_mail = SendMail(Sender, PassWD, Receiver,
+TypeError: __init__() got an unexpected keyword argument 'receivers'
+2020-01-06 14:24:16,608 - main.py - [line:41] - ERROR - (<class 'TypeError'>, TypeError("__init__() got an unexpected keyword argument 'receivers'"), <traceback object at 0x0000025EE17D0D00>)
+Traceback (most recent call last):
+  File "D:/Python_field/StartField/main.py", line 39, in <module>
+    run()
+  File "D:/Python_field/StartField/main.py", line 32, in run
+    send_mail = SendMail(Sender, PassWD, Receiver,
+TypeError: __init__() got an unexpected keyword argument 'receivers'
+2020-01-06 14:24:16,610 - main.py - [line:43] - INFO - process end
+2020-01-06 14:24:16,610 - main.py - [line:43] - INFO - process end
+2020-01-06 14:24:16,610 - main.py - [line:43] - INFO - process end
+2020-01-06 14:24:16,610 - main.py - [line:43] - INFO - process end
+2020-01-06 14:24:16,610 - main.py - [line:43] - INFO - process end
+2020-01-06 14:24:16,610 - main.py - [line:43] - INFO - process end
+2020-01-06 14:24:16,610 - main.py - [line:43] - INFO - process end
+2020-01-06 14:26:46,578 - test_html.py - [line:9] - INFO - info
+2020-01-06 14:26:46,599 - main.py - [line:16] - INFO - main
+2020-01-06 14:26:46,599 - main.py - [line:16] - INFO - main
+2020-01-06 14:26:46,599 - main.py - [line:16] - INFO - main
+2020-01-06 14:26:47,649 - read_Excel.py - [line:6] - INFO - info
+2020-01-06 14:26:47,649 - read_Excel.py - [line:6] - INFO - info
+2020-01-06 14:26:47,649 - read_Excel.py - [line:6] - INFO - info
+2020-01-06 14:26:47,649 - read_Excel.py - [line:6] - INFO - info
+2020-01-06 14:26:47,652 - test_api.py - [line:16] - INFO - info
+2020-01-06 14:26:47,652 - test_api.py - [line:16] - INFO - info
+2020-01-06 14:26:47,652 - test_api.py - [line:16] - INFO - info
+2020-01-06 14:26:47,652 - test_api.py - [line:16] - INFO - info
+2020-01-06 14:26:47,652 - test_api.py - [line:16] - INFO - info
+2020-01-06 14:26:47,652 - test_api.py - [line:16] - INFO - info
+2020-01-06 14:26:47,734 - test_html.py - [line:9] - INFO - info
+2020-01-06 14:26:47,734 - test_html.py - [line:9] - INFO - info
+2020-01-06 14:26:47,734 - test_html.py - [line:9] - INFO - info
+2020-01-06 14:26:47,734 - test_html.py - [line:9] - INFO - info
+2020-01-06 14:26:47,734 - test_html.py - [line:9] - INFO - info
+2020-01-06 14:26:47,734 - test_html.py - [line:9] - INFO - info
+2020-01-06 14:26:47,734 - test_html.py - [line:9] - INFO - info
+2020-01-06 14:26:48,146 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:26:48,146 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:26:48,146 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:26:48,146 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:26:48,146 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:26:48,146 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:26:48,146 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:26:49,117 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:26:49,117 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:26:49,117 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:26:49,117 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:26:49,117 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:26:49,117 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:26:49,117 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:26:50,809 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:26:50,809 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:26:50,809 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:26:50,809 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:26:50,809 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:26:50,809 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:26:50,809 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:26:51,618 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:26:51,618 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:26:51,618 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:26:51,618 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:26:51,618 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:26:51,618 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:26:51,618 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:26:52,804 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:26:52,804 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:26:52,804 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:26:52,804 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:26:52,804 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:26:52,804 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:26:52,804 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:26:53,827 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:26:53,827 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:26:53,827 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:26:53,827 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:26:53,827 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:26:53,827 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:26:53,827 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:26:54,450 - main.py - [line:41] - ERROR - (<class 'TypeError'>, TypeError("__init__() got an unexpected keyword argument 'receivers'"), <traceback object at 0x000001808B254440>)
+Traceback (most recent call last):
+  File "D:/Python_field/StartField/main.py", line 39, in <module>
+    run()
+  File "D:/Python_field/StartField/main.py", line 32, in run
+    send_mail = SendMail(Sender, PassWD, Receiver,
+TypeError: __init__() got an unexpected keyword argument 'receivers'
+2020-01-06 14:26:54,450 - main.py - [line:41] - ERROR - (<class 'TypeError'>, TypeError("__init__() got an unexpected keyword argument 'receivers'"), <traceback object at 0x000001808B254440>)
+Traceback (most recent call last):
+  File "D:/Python_field/StartField/main.py", line 39, in <module>
+    run()
+  File "D:/Python_field/StartField/main.py", line 32, in run
+    send_mail = SendMail(Sender, PassWD, Receiver,
+TypeError: __init__() got an unexpected keyword argument 'receivers'
+2020-01-06 14:26:54,450 - main.py - [line:41] - ERROR - (<class 'TypeError'>, TypeError("__init__() got an unexpected keyword argument 'receivers'"), <traceback object at 0x000001808B254440>)
+Traceback (most recent call last):
+  File "D:/Python_field/StartField/main.py", line 39, in <module>
+    run()
+  File "D:/Python_field/StartField/main.py", line 32, in run
+    send_mail = SendMail(Sender, PassWD, Receiver,
+TypeError: __init__() got an unexpected keyword argument 'receivers'
+2020-01-06 14:26:54,450 - main.py - [line:41] - ERROR - (<class 'TypeError'>, TypeError("__init__() got an unexpected keyword argument 'receivers'"), <traceback object at 0x000001808B254440>)
+Traceback (most recent call last):
+  File "D:/Python_field/StartField/main.py", line 39, in <module>
+    run()
+  File "D:/Python_field/StartField/main.py", line 32, in run
+    send_mail = SendMail(Sender, PassWD, Receiver,
+TypeError: __init__() got an unexpected keyword argument 'receivers'
+2020-01-06 14:26:54,450 - main.py - [line:41] - ERROR - (<class 'TypeError'>, TypeError("__init__() got an unexpected keyword argument 'receivers'"), <traceback object at 0x000001808B254440>)
+Traceback (most recent call last):
+  File "D:/Python_field/StartField/main.py", line 39, in <module>
+    run()
+  File "D:/Python_field/StartField/main.py", line 32, in run
+    send_mail = SendMail(Sender, PassWD, Receiver,
+TypeError: __init__() got an unexpected keyword argument 'receivers'
+2020-01-06 14:26:54,450 - main.py - [line:41] - ERROR - (<class 'TypeError'>, TypeError("__init__() got an unexpected keyword argument 'receivers'"), <traceback object at 0x000001808B254440>)
+Traceback (most recent call last):
+  File "D:/Python_field/StartField/main.py", line 39, in <module>
+    run()
+  File "D:/Python_field/StartField/main.py", line 32, in run
+    send_mail = SendMail(Sender, PassWD, Receiver,
+TypeError: __init__() got an unexpected keyword argument 'receivers'
+2020-01-06 14:26:54,450 - main.py - [line:41] - ERROR - (<class 'TypeError'>, TypeError("__init__() got an unexpected keyword argument 'receivers'"), <traceback object at 0x000001808B254440>)
+Traceback (most recent call last):
+  File "D:/Python_field/StartField/main.py", line 39, in <module>
+    run()
+  File "D:/Python_field/StartField/main.py", line 32, in run
+    send_mail = SendMail(Sender, PassWD, Receiver,
+TypeError: __init__() got an unexpected keyword argument 'receivers'
+2020-01-06 14:26:54,451 - main.py - [line:43] - INFO - process end
+2020-01-06 14:26:54,451 - main.py - [line:43] - INFO - process end
+2020-01-06 14:26:54,451 - main.py - [line:43] - INFO - process end
+2020-01-06 14:26:54,451 - main.py - [line:43] - INFO - process end
+2020-01-06 14:26:54,451 - main.py - [line:43] - INFO - process end
+2020-01-06 14:26:54,451 - main.py - [line:43] - INFO - process end
+2020-01-06 14:26:54,451 - main.py - [line:43] - INFO - process end
+2020-01-06 14:27:51,032 - test_html.py - [line:9] - INFO - info
+2020-01-06 14:27:51,055 - main.py - [line:16] - INFO - main
+2020-01-06 14:27:51,055 - main.py - [line:16] - INFO - main
+2020-01-06 14:27:51,055 - main.py - [line:16] - INFO - main
+2020-01-06 14:27:52,127 - read_Excel.py - [line:6] - INFO - info
+2020-01-06 14:27:52,127 - read_Excel.py - [line:6] - INFO - info
+2020-01-06 14:27:52,127 - read_Excel.py - [line:6] - INFO - info
+2020-01-06 14:27:52,127 - read_Excel.py - [line:6] - INFO - info
+2020-01-06 14:27:52,131 - test_api.py - [line:16] - INFO - info
+2020-01-06 14:27:52,131 - test_api.py - [line:16] - INFO - info
+2020-01-06 14:27:52,131 - test_api.py - [line:16] - INFO - info
+2020-01-06 14:27:52,131 - test_api.py - [line:16] - INFO - info
+2020-01-06 14:27:52,131 - test_api.py - [line:16] - INFO - info
+2020-01-06 14:27:52,131 - test_api.py - [line:16] - INFO - info
+2020-01-06 14:27:52,210 - test_html.py - [line:9] - INFO - info
+2020-01-06 14:27:52,210 - test_html.py - [line:9] - INFO - info
+2020-01-06 14:27:52,210 - test_html.py - [line:9] - INFO - info
+2020-01-06 14:27:52,210 - test_html.py - [line:9] - INFO - info
+2020-01-06 14:27:52,210 - test_html.py - [line:9] - INFO - info
+2020-01-06 14:27:52,210 - test_html.py - [line:9] - INFO - info
+2020-01-06 14:27:52,210 - test_html.py - [line:9] - INFO - info
+2020-01-06 14:27:52,634 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:27:52,634 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:27:52,634 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:27:52,634 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:27:52,634 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:27:52,634 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:27:52,634 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:27:53,618 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:27:53,618 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:27:53,618 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:27:53,618 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:27:53,618 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:27:53,618 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:27:53,618 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:27:55,351 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:27:55,351 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:27:55,351 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:27:55,351 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:27:55,351 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:27:55,351 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:27:55,351 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:27:56,207 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:27:56,207 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:27:56,207 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:27:56,207 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:27:56,207 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:27:56,207 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:27:56,207 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:27:57,613 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:27:57,613 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:27:57,613 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:27:57,613 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:27:57,613 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:27:57,613 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:27:57,613 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:27:58,627 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:27:58,627 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:27:58,627 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:27:58,627 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:27:58,627 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:27:58,627 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:27:58,627 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:28:02,200 - main.py - [line:43] - INFO - process end
+2020-01-06 14:28:02,200 - main.py - [line:43] - INFO - process end
+2020-01-06 14:28:02,200 - main.py - [line:43] - INFO - process end
+2020-01-06 14:28:02,200 - main.py - [line:43] - INFO - process end
+2020-01-06 14:28:02,200 - main.py - [line:43] - INFO - process end
+2020-01-06 14:28:02,200 - main.py - [line:43] - INFO - process end
+2020-01-06 14:28:02,200 - main.py - [line:43] - INFO - process end
+2020-01-06 14:30:04,554 - test_html.py - [line:9] - INFO - info
+2020-01-06 14:30:04,574 - main.py - [line:16] - INFO - main
+2020-01-06 14:30:04,574 - main.py - [line:16] - INFO - main
+2020-01-06 14:30:04,574 - main.py - [line:16] - INFO - main
+2020-01-06 14:30:05,641 - read_Excel.py - [line:6] - INFO - info
+2020-01-06 14:30:05,641 - read_Excel.py - [line:6] - INFO - info
+2020-01-06 14:30:05,641 - read_Excel.py - [line:6] - INFO - info
+2020-01-06 14:30:05,641 - read_Excel.py - [line:6] - INFO - info
+2020-01-06 14:30:05,646 - test_api.py - [line:16] - INFO - info
+2020-01-06 14:30:05,646 - test_api.py - [line:16] - INFO - info
+2020-01-06 14:30:05,646 - test_api.py - [line:16] - INFO - info
+2020-01-06 14:30:05,646 - test_api.py - [line:16] - INFO - info
+2020-01-06 14:30:05,646 - test_api.py - [line:16] - INFO - info
+2020-01-06 14:30:05,646 - test_api.py - [line:16] - INFO - info
+2020-01-06 14:30:05,724 - test_html.py - [line:9] - INFO - info
+2020-01-06 14:30:05,724 - test_html.py - [line:9] - INFO - info
+2020-01-06 14:30:05,724 - test_html.py - [line:9] - INFO - info
+2020-01-06 14:30:05,724 - test_html.py - [line:9] - INFO - info
+2020-01-06 14:30:05,724 - test_html.py - [line:9] - INFO - info
+2020-01-06 14:30:05,724 - test_html.py - [line:9] - INFO - info
+2020-01-06 14:30:05,724 - test_html.py - [line:9] - INFO - info
+2020-01-06 14:30:05,727 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:30:05,727 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:30:05,727 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:30:05,727 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:30:05,727 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:30:05,727 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:30:05,727 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:30:05,886 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:30:05,886 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:30:05,886 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:30:05,886 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:30:05,886 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:30:05,886 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:30:05,886 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:30:06,039 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:30:06,039 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:30:06,039 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:30:06,039 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:30:06,039 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:30:06,039 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:30:06,039 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:30:06,180 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:30:06,180 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:30:06,180 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:30:06,180 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:30:06,180 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:30:06,180 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:30:06,180 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:30:06,305 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:30:06,305 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:30:06,305 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:30:06,305 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:30:06,305 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:30:06,305 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:30:06,305 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:30:06,435 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:30:06,435 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:30:06,435 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:30:06,435 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:30:06,435 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:30:06,435 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:30:06,435 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:30:06,592 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:30:06,592 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:30:06,592 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:30:06,592 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:30:06,592 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:30:06,592 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:30:06,592 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:30:06,759 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:30:06,759 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:30:06,759 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:30:06,759 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:30:06,759 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:30:06,759 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:30:06,759 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:30:06,882 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:30:06,882 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:30:06,882 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:30:06,882 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:30:06,882 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:30:06,882 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:30:06,882 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:30:07,002 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:30:07,002 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:30:07,002 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:30:07,002 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:30:07,002 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:30:07,002 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:30:07,002 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:30:07,129 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:30:07,129 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:30:07,129 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:30:07,129 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:30:07,129 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:30:07,129 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:30:07,129 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:30:07,263 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:30:07,263 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:30:07,263 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:30:07,263 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:30:07,263 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:30:07,263 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:30:07,263 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:30:07,393 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:30:07,393 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:30:07,393 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:30:07,393 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:30:07,393 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:30:07,393 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:30:07,393 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:30:07,517 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:30:07,517 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:30:07,517 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:30:07,517 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:30:07,517 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:30:07,517 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:30:07,517 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:30:07,652 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:30:07,652 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:30:07,652 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:30:07,652 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:30:07,652 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:30:07,652 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:30:07,652 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:30:08,187 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:30:08,187 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:30:08,187 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:30:08,187 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:30:08,187 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:30:08,187 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:30:08,187 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:30:08,449 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:30:08,449 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:30:08,449 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:30:08,449 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:30:08,449 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:30:08,449 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:30:08,449 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:30:08,672 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:30:08,672 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:30:08,672 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:30:08,672 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:30:08,672 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:30:08,672 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:30:08,672 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:30:08,811 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:30:08,811 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:30:08,811 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:30:08,811 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:30:08,811 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:30:08,811 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:30:08,811 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:30:08,970 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:30:08,970 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:30:08,970 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:30:08,970 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:30:08,970 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:30:08,970 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:30:08,970 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:30:09,098 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:30:09,098 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:30:09,098 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:30:09,098 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:30:09,098 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:30:09,098 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:30:09,098 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:30:09,703 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:30:09,703 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:30:09,703 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:30:09,703 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:30:09,703 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:30:09,703 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:30:09,703 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:30:10,690 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:30:10,690 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:30:10,690 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:30:10,690 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:30:10,690 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:30:10,690 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:30:10,690 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:30:12,511 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:30:12,511 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:30:12,511 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:30:12,511 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:30:12,511 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:30:12,511 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:30:12,511 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:30:13,554 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:30:13,554 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:30:13,554 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:30:13,554 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:30:13,554 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:30:13,554 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:30:13,554 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:30:14,887 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:30:14,887 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:30:14,887 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:30:14,887 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:30:14,887 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:30:14,887 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:30:14,887 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:30:15,949 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:30:15,949 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:30:15,949 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:30:15,949 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:30:15,949 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:30:15,949 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:30:15,949 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:30:17,938 - main.py - [line:43] - INFO - process end
+2020-01-06 14:30:17,938 - main.py - [line:43] - INFO - process end
+2020-01-06 14:30:17,938 - main.py - [line:43] - INFO - process end
+2020-01-06 14:30:17,938 - main.py - [line:43] - INFO - process end
+2020-01-06 14:30:17,938 - main.py - [line:43] - INFO - process end
+2020-01-06 14:30:17,938 - main.py - [line:43] - INFO - process end
+2020-01-06 14:30:17,938 - main.py - [line:43] - INFO - process end
+2020-01-06 14:37:20,543 - test_html.py - [line:9] - INFO - info
+2020-01-06 14:37:20,564 - main.py - [line:16] - INFO - main
+2020-01-06 14:37:20,564 - main.py - [line:16] - INFO - main
+2020-01-06 14:37:20,564 - main.py - [line:16] - INFO - main
+2020-01-06 14:37:21,649 - read_Excel.py - [line:6] - INFO - info
+2020-01-06 14:37:21,649 - read_Excel.py - [line:6] - INFO - info
+2020-01-06 14:37:21,649 - read_Excel.py - [line:6] - INFO - info
+2020-01-06 14:37:21,649 - read_Excel.py - [line:6] - INFO - info
+2020-01-06 14:37:21,652 - test_api.py - [line:16] - INFO - info
+2020-01-06 14:37:21,652 - test_api.py - [line:16] - INFO - info
+2020-01-06 14:37:21,652 - test_api.py - [line:16] - INFO - info
+2020-01-06 14:37:21,652 - test_api.py - [line:16] - INFO - info
+2020-01-06 14:37:21,652 - test_api.py - [line:16] - INFO - info
+2020-01-06 14:37:21,652 - test_api.py - [line:16] - INFO - info
+2020-01-06 14:37:21,731 - test_html.py - [line:9] - INFO - info
+2020-01-06 14:37:21,731 - test_html.py - [line:9] - INFO - info
+2020-01-06 14:37:21,731 - test_html.py - [line:9] - INFO - info
+2020-01-06 14:37:21,731 - test_html.py - [line:9] - INFO - info
+2020-01-06 14:37:21,731 - test_html.py - [line:9] - INFO - info
+2020-01-06 14:37:21,731 - test_html.py - [line:9] - INFO - info
+2020-01-06 14:37:21,731 - test_html.py - [line:9] - INFO - info
+2020-01-06 14:37:21,734 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:37:21,734 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:37:21,734 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:37:21,734 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:37:21,734 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:37:21,734 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:37:21,734 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:37:21,893 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:37:21,893 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:37:21,893 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:37:21,893 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:37:21,893 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:37:21,893 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:37:21,893 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:37:22,062 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:37:22,062 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:37:22,062 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:37:22,062 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:37:22,062 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:37:22,062 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:37:22,062 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:37:22,195 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:37:22,195 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:37:22,195 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:37:22,195 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:37:22,195 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:37:22,195 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:37:22,195 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:37:22,322 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:37:22,322 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:37:22,322 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:37:22,322 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:37:22,322 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:37:22,322 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:37:22,322 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:37:22,456 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:37:22,456 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:37:22,456 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:37:22,456 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:37:22,456 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:37:22,456 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:37:22,456 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:37:22,586 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:37:22,586 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:37:22,586 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:37:22,586 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:37:22,586 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:37:22,586 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:37:22,586 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:37:22,715 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:37:22,715 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:37:22,715 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:37:22,715 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:37:22,715 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:37:22,715 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:37:22,715 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:37:22,853 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:37:22,853 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:37:22,853 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:37:22,853 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:37:22,853 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:37:22,853 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:37:22,853 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:37:22,988 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:37:22,988 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:37:22,988 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:37:22,988 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:37:22,988 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:37:22,988 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:37:22,988 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:37:23,123 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:37:23,123 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:37:23,123 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:37:23,123 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:37:23,123 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:37:23,123 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:37:23,123 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:37:23,270 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:37:23,270 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:37:23,270 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:37:23,270 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:37:23,270 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:37:23,270 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:37:23,270 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:37:23,408 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:37:23,408 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:37:23,408 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:37:23,408 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:37:23,408 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:37:23,408 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:37:23,408 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:37:23,535 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:37:23,535 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:37:23,535 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:37:23,535 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:37:23,535 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:37:23,535 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:37:23,535 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:37:23,660 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:37:23,660 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:37:23,660 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:37:23,660 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:37:23,660 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:37:23,660 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:37:23,660 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:37:24,235 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:37:24,235 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:37:24,235 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:37:24,235 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:37:24,235 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:37:24,235 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:37:24,235 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:37:24,489 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:37:24,489 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:37:24,489 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:37:24,489 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:37:24,489 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:37:24,489 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:37:24,489 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:37:24,723 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:37:24,723 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:37:24,723 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:37:24,723 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:37:24,723 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:37:24,723 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:37:24,723 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:37:24,851 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:37:24,851 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:37:24,851 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:37:24,851 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:37:24,851 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:37:24,851 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:37:24,851 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:37:24,997 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:37:24,997 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:37:24,997 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:37:24,997 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:37:24,997 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:37:24,997 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:37:24,997 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:37:25,129 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:37:25,129 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:37:25,129 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:37:25,129 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:37:25,129 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:37:25,129 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:37:25,129 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:37:25,766 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:37:25,766 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:37:25,766 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:37:25,766 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:37:25,766 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:37:25,766 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:37:25,766 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:37:27,178 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:37:27,178 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:37:27,178 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:37:27,178 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:37:27,178 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:37:27,178 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:37:27,178 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:37:28,993 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:37:28,993 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:37:28,993 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:37:28,993 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:37:28,993 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:37:28,993 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:37:28,993 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:37:29,922 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:37:29,922 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:37:29,922 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:37:29,922 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:37:29,922 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:37:29,922 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:37:29,922 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:37:31,447 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:37:31,447 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:37:31,447 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:37:31,447 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:37:31,447 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:37:31,447 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:37:31,447 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:37:32,576 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:37:32,576 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:37:32,576 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:37:32,576 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:37:32,576 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:37:32,576 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:37:32,576 - runmethod.py - [line:20] - WARNING - unexpected EOF while parsing (<string>, line 0)
+2020-01-06 14:37:34,713 - main.py - [line:43] - INFO - process end
+2020-01-06 14:37:34,713 - main.py - [line:43] - INFO - process end
+2020-01-06 14:37:34,713 - main.py - [line:43] - INFO - process end
+2020-01-06 14:37:34,713 - main.py - [line:43] - INFO - process end
+2020-01-06 14:37:34,713 - main.py - [line:43] - INFO - process end
+2020-01-06 14:37:34,713 - main.py - [line:43] - INFO - process end
+2020-01-06 14:37:34,713 - main.py - [line:43] - INFO - process end
+2020-01-06 14:44:51,226 - send_email.py - [line:86] - ERROR - (<class 'AttributeError'>, AttributeError("'NoneType' object has no attribute 'append'"), <traceback object at 0x000002E7C9F499C0>)
+Traceback (most recent call last):
+  File "D:/Python_field/StartField/base/send_email.py", line 81, in send
+    self.receivers.append(self.recv)
+AttributeError: 'NoneType' object has no attribute 'append'
